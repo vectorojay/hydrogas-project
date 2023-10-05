@@ -1,0 +1,50 @@
+* {
+  margin: 0 !important;
+  padding: 0 !important;
+  box-sizing: border-box;
+}
+
+.logo {
+  width: 100px;
+}
+
+.navigation-bar {
+  color: #000 !important;
+}
+
+.text-orange {
+  color: orange !important;
+}
+
+.section-hero {
+  position: relative;
+  height: 80vh;
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.795),
+      rgba(210, 187, 194, 0.027)
+    ),
+    url(images/hero-bg.jpg);
+
+  background-size: cover;
+  background-position: center;
+}
+
+.backdrop {
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+
+  backdrop-filter: blur(5px);
+}
+
+.hero-sub-text {
+  margin-bottom: 3rem !important;
+}
+
+.btn-border-orange {
+  border-color: orange !important;
+}

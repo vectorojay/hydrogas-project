@@ -48,3 +48,13 @@
 .btn-border-orange {
   border-color: orange !important;
 }
+
+.feature-icon-cstm {
+  width: 32px;
+  height: 32px;
+  color: red;
+}
+
+.icon-link-color {
+  color: orange !important;
+}

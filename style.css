@@ -41,6 +41,10 @@
   backdrop-filter: blur(5px);
 }
 
+span {
+  color: orange;
+}
+
 .hero-sub-text {
   margin-bottom: 3rem !important;
 }
@@ -57,4 +61,21 @@
 
 .icon-link-color {
   color: orange !important;
+}
+
+.product-img {
+  width: 18rem;
+}
+
+.products-sub-head {
+  margin-bottom: 6rem !important;
+}
+
+.gdn {
+  gap: 2rem !important;
+}
+
+.products-shadow {
+  padding: 3rem 0 !important;
+  box-shadow: 0 0 32px 0px rgba(0, 0, 0, 0.1);
 }

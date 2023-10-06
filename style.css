@@ -79,3 +79,13 @@ span {
   padding: 3rem 0 !important;
   box-shadow: 0 0 32px 0px rgba(0, 0, 0, 0.1);
 }
+
+@media (max-width: 576px) {
+  .hero-sub-text {
+    display: none;
+  }
+
+  .section-hero {
+    height: 60vh;
+  }
+}

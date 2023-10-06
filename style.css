@@ -86,7 +86,11 @@ span {
   }
 
   .section-hero {
-    height: 60vh;
+    height: 55vh;
+  }
+
+  .objectives-box {
+    flex-direction: column !important;
   }
 }
 
@@ -102,4 +106,10 @@ span {
 
   background-size: cover;
   background-position: center;
+}
+
+.objectives-img {
+  object-fit: cover;
+  height: 13rem;
+  width: 100%;
 }

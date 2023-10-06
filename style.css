@@ -89,3 +89,17 @@ span {
     height: 60vh;
   }
 }
+
+.section-about {
+  position: relative;
+  height: 50vh;
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.795),
+      rgba(210, 187, 194, 0.027)
+    ),
+    url(images/3d-rendering-gas-cylinder.jpg);
+
+  background-size: cover;
+  background-position: center;
+}

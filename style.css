@@ -125,5 +125,30 @@ span {
 }
 
 .card-body {
-  border-top: 0.5px solid rgba(128, 128, 128, 0.104);
+  border-top: 0.5px solid rgba(128, 128, 128, 0.326);
+}
+
+.section-banner {
+  margin-top: 5rem !important;
+}
+
+.refill-box {
+  background-image: linear-gradient(to right, #ffa500, #ffa60085),
+    url(images/bggas.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.repaint-box {
+  background-image: linear-gradient(to right, #198754, #19875486),
+    url(images/bggas.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.accessories-box {
+  background-image: linear-gradient(to right, #fff, #ffffff7c),
+    url(images/bggas.jpg);
+  background-size: cover;
+  background-position: center;
 }

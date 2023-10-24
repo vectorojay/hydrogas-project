@@ -211,7 +211,7 @@ span {
 
 .home-newsletter {
   padding: 80px 0;
-  background: #03244b;
+  background: #198754;
   border-radius: 0.5rem;
   -webkit-border-radius: 0.5rem;
   -moz-border-radius: 0.5rem;
@@ -234,8 +234,8 @@ span {
 }
 .home-newsletter .single .form-control {
   height: 50px;
-  background: rgba(255, 255, 255, 0.6);
-  border-color: transparent;
+  /* background: rgba(255, 255, 255, 0.6); */
+  /* border-color: transparent; */
   border-radius: 20px 0 0 20px;
 }
 .home-newsletter .single .form-control:focus {
@@ -245,6 +245,30 @@ span {
 .home-newsletter .single .btn {
   min-height: 50px;
   border-radius: 0 20px 20px 0;
-  background: #243c4f;
+  background: #ffa500;
   color: #fff;
+}
+
+.greyish {
+  color: #736e6e;
+}
+
+.priceLine {
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: #d6d6d6;
+  text-decoration: line-through;
+}
+
+.eyeicon {
+  padding: 1rem !important;
+  border: 1px solid rgb(235, 227, 227);
+}
+
+.darkBlue {
+  color: rgb(9, 9, 135);
+}
+
+.red {
+  color: red;
 }

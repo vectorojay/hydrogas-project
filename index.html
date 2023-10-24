@@ -25,7 +25,7 @@
       <p><ion-icon name="phone-portrait-sharp"></ion-icon>+234-706-964-2083</p>
     </div>
 
-    <nav class="navbar navbar-expand-md navbar-dark bg-light p-3 sticky-top">
+    <nav class="navbar navbar-expand-md bg-light p-3 sticky-top">
       <div class="container-fluid mx-auto w-75">
         <a class="navbar-brand" href="#"
           ><img class="logo" src="images/cropped-hydropet-logo.png" alt=""
@@ -68,36 +68,41 @@
               <a class="nav-link text-black disabled">Blog</a>
             </li>
           </ul>
-          <form class="d-flex" role="search">
+          <!-- <form class="d-flex" role="search">
             <input
               class="form-control me-2 p-2"
+              id="search-input"
               type="search"
               placeholder="Search"
               aria-label="Search"
             />
             <button
               class="btn btn-outline-success btn-border-orange text-orange p-1"
+              id="search-btn"
               type="submit"
             >
               Search
             </button>
-
+          </form> -->
+          <div class="d-flex mt-2">
             <button
               class="btn btn-outline-success bg-success text-white p-1 text-nowrap ms-3 px-3"
               type="submit"
             >
               Order a Refill
             </button>
-          </form>
-          <button
-            class="btn bg-success text-white d-flex p-1 text-nowrap ms-3 px-3"
-          >
-            Go to Cart
-            <ion-icon
-              name="cart"
-              style="height: 1.8rem; width: 1.8rem"
-            ></ion-icon>
-          </button>
+            <button
+              class="button-cart btn bg-success text-white d-flex p-1 text-nowrap ms-3 px-3"
+            >
+              <ion-icon
+                name="cart"
+                style="height: 1.8rem; width: 1.8rem"
+              ></ion-icon>
+              <div class="cart-number-box">
+                <span class="cart-number text-white">15</span>
+              </div>
+            </button>
+          </div>
         </div>
       </div>
     </nav>
@@ -141,7 +146,7 @@
       <div class="container px-4 py-5 mx-auto" id="featured-3">
         <h2 class="pb-2 border-bottom">What We Do?</h2>
         <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
-          <div class="feature col">
+          <div class="feature col py-3">
             <div
               class="feature-icon d-inline-flex align-items-center justify-content-center fs-2 mb-3"
             >
@@ -166,7 +171,7 @@
               </svg>
             </a>
           </div>
-          <div class="feature col">
+          <div class="feature col py-3">
             <div
               class="feature-icon d-inline-flex align-items-center justify-content-center fs-2 mb-3"
             >
@@ -191,7 +196,7 @@
               </svg>
             </a>
           </div>
-          <div class="feature col">
+          <div class="feature col py-3">
             <div
               class="feature-icon d-inline-flex align-items-center justify-content-center fs-2 mb-3"
             >
@@ -522,6 +527,33 @@
         </div>
       </div>
     </section>
+
+    <div class="container">
+      <section class="home-newsletter bordered">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12">
+              <div class="single">
+                <h2>Subscribe to our Newsletter</h2>
+                <div class="input-group">
+                  <input
+                    type="email"
+                    class="form-control"
+                    placeholder="Enter your email"
+                  />
+                  <span class="input-group-btn">
+                    <button class="btn btn-theme" type="submit">
+                      <i class="fa fa-paper-plane"></i> Subscribe
+                    </button>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
     <section class="section-footer container mx-auto">
       <footer
         class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top"

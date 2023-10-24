@@ -16,6 +16,24 @@
   color: orange !important;
 }
 
+.button-cart {
+  position: relative;
+}
+
+.cart-number-box {
+  position: absolute;
+  top: -3px;
+  right: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 1.2rem;
+  width: 1.2rem;
+  padding: 0.7rem !important;
+  background-color: red;
+  border-radius: 50%;
+}
+
 .section-hero,
 .section-shop-header {
   position: relative;
@@ -97,11 +115,16 @@ span {
   .objectives-box {
     flex-direction: column !important;
   }
+
+  .search-btn,
+  .search-input {
+    display: none !important;
+  }
 }
 
 .section-about {
   position: relative;
-  height: 50vh;
+  height: 35rem;
   background-image: linear-gradient(
       to right,
       rgba(0, 0, 0, 0.795),
@@ -182,4 +205,46 @@ span {
 
   background-size: cover;
   background-position: center;
+}
+
+/************* NEWSLETTER **************/
+
+.home-newsletter {
+  padding: 80px 0;
+  background: #03244b;
+  border-radius: 0.5rem;
+  -webkit-border-radius: 0.5rem;
+  -moz-border-radius: 0.5rem;
+  -ms-border-radius: 0.5rem;
+  -o-border-radius: 0.5rem;
+}
+
+.home-newsletter .single {
+  max-width: 650px;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+  z-index: 2;
+}
+.home-newsletter .single h2 {
+  /* font-size: 32px; */
+  color: white;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+}
+.home-newsletter .single .form-control {
+  height: 50px;
+  background: rgba(255, 255, 255, 0.6);
+  border-color: transparent;
+  border-radius: 20px 0 0 20px;
+}
+.home-newsletter .single .form-control:focus {
+  box-shadow: none;
+  border-color: #243c4f;
+}
+.home-newsletter .single .btn {
+  min-height: 50px;
+  border-radius: 0 20px 20px 0;
+  background: #243c4f;
+  color: #fff;
 }

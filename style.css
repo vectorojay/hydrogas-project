@@ -1,9 +1,10 @@
-* {
+/* * {
   margin: 0 !important;
   padding: 0 !important;
   box-sizing: border-box;
-}
+} */
 
+/*********** NAVIGATION *************/
 .logo {
   width: 100px;
 }
@@ -33,6 +34,8 @@
   background-color: red;
   border-radius: 50%;
 }
+
+/************** HERO SECTION ***************/
 
 .section-hero,
 .section-shop-header {
@@ -76,6 +79,7 @@ span {
   border-color: orange !important;
 }
 
+/**************** FEATURED PRODUCTS *****************/
 .feature-icon-cstm {
   width: 32px;
   height: 32px;
@@ -103,26 +107,8 @@ span {
   box-shadow: 0 0 32px 0px rgba(0, 0, 0, 0.1);
 }
 
-@media (max-width: 576px) {
-  .hero-sub-text {
-    display: none;
-  }
-
-  .section-hero {
-    height: 55vh;
-  }
-
-  .objectives-box {
-    flex-direction: column !important;
-  }
-
-  .search-btn,
-  .search-input {
-    display: none !important;
-  }
-}
-
-.section-about {
+/***************** SECTION ABOUT ********************/
+.about-box {
   position: relative;
   height: 35rem;
   background-image: linear-gradient(
@@ -136,9 +122,11 @@ span {
   background-position: center;
 }
 
+/******************** SECTION OBJECTIVES *********************/
+
 .section-objectives {
-  margin-top: 2rem !important;
-  margin-bottom: 2rem !important;
+  margin-top: 10rem !important;
+  margin-bottom: 10rem !important;
 }
 
 .objectives-img {
@@ -161,6 +149,7 @@ span {
   border-top: 0.5px solid rgba(128, 128, 128, 0.326);
 }
 
+/******************** SECTION BANNER ************************/
 .section-banner {
   margin-top: 12rem !important;
 }
@@ -186,11 +175,12 @@ span {
   background-position: center;
 }
 
-.section-footer {
-  margin-top: 12rem !important;
-}
-
 /**************************** SHOP ***********************************/
+
+.section-products .card-title:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
 
 .section-shop-header {
   height: 30vh;
@@ -205,6 +195,41 @@ span {
 
   background-size: cover;
   background-position: center;
+}
+
+.greyish {
+  color: #736e6e;
+}
+
+.priceLine {
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: #d6d6d6;
+  text-decoration: line-through;
+}
+
+.eyeicon {
+  padding: 1rem !important;
+  border: 1px solid rgb(235, 227, 227);
+}
+
+.darkBlue {
+  color: rgb(9, 9, 135);
+}
+
+.red {
+  color: red;
+}
+
+#images {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  list-style-type: none;
+}
+
+.section-testimonial {
+  margin: 10rem 6rem !important;
 }
 
 /************* NEWSLETTER **************/
@@ -249,26 +274,89 @@ span {
   color: #fff;
 }
 
-.greyish {
-  color: #736e6e;
+/***************** SECTION PRODUCT ******************/
+.section-product {
+  display: flex;
+  margin-top: 20px;
 }
 
-.priceLine {
-  font-weight: 600;
-  font-size: 1.1rem;
-  color: #d6d6d6;
-  text-decoration: line-through;
+.single-prod-img {
+  width: 40%;
+  margin-right: 50px;
 }
 
-.eyeicon {
-  padding: 1rem !important;
-  border: 1px solid rgb(235, 227, 227);
+.single-prod-details {
+  width: 50%;
+  padding-top: 30px;
 }
 
-.darkBlue {
-  color: rgb(9, 9, 135);
+.single-prod-details h4 {
+  padding: 40px 0 20px 0;
 }
 
-.red {
-  color: red;
+.single-prod-details h2 {
+  font-size: 26px;
+}
+
+.single-prod-details select {
+  display: block;
+  padding: 5px 10px;
+  margin-bottom: 10px;
+}
+
+.single-prod-details input {
+  width: 50px;
+  height: 47px;
+  padding-left: 10px;
+  font-size: 16px;
+  margin-right: 10px;
+}
+
+.single-prod-details input:focus {
+  outline: none;
+}
+
+.single-prod-details button {
+  background-color: #198754;
+  color: #fff;
+  border: none;
+  padding: 10px 5px;
+}
+
+.single-prod-details button:hover {
+  background-color: #198754;
+}
+
+.single-prod-details span {
+  line-height: 25px;
+}
+
+/********************** SECTION FOOTER *********************/
+.section-footer {
+  margin-top: 12rem !important;
+}
+
+/**************** QUERIES ***************/
+@media (max-width: 576px) {
+  .hero-sub-text {
+    display: none;
+  }
+
+  .section-hero {
+    height: 55vh;
+  }
+
+  .objectives-box {
+    flex-direction: column !important;
+  }
+
+  .search-btn,
+  .search-input {
+    display: none !important;
+  }
+}
+
+.prod-name:hover {
+  text-decoration: underline;
+  cursor: pointer;
 }

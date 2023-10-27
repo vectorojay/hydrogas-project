@@ -107,6 +107,10 @@ span {
   box-shadow: 0 0 32px 0px rgba(0, 0, 0, 0.1);
 }
 
+.view-btn:hover {
+  color: #fff !important;
+}
+
 /***************** SECTION ABOUT ********************/
 .about-box {
   position: relative;
@@ -182,10 +186,13 @@ span {
   text-decoration: underline;
 }
 
-.section-shop-header {
+.section-shop-header,
+.section-blog-header {
   height: 30vh;
   position: relative;
+}
 
+.section-shop-header {
   background-image: linear-gradient(
       to right,
       rgba(0, 0, 0, 0.795),
@@ -331,6 +338,43 @@ span {
   line-height: 25px;
 }
 
+/********************** SECTION BLOG ************************/
+.section-blog-header {
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.795),
+      rgba(210, 187, 194, 0.027)
+    ),
+    url(images/pexels-pixabay-257700.jpg);
+
+  background-size: cover;
+  background-position: center;
+}
+
+.blog {
+  padding: 150px 150px 0 150px;
+}
+
+.blog-box {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.blog-img {
+  width: 50%;
+  margin-right: 40px;
+}
+
+.blog-img img {
+  height: 300px;
+  object-fit: cover;
+}
+
+.blog-details {
+  width: 50%;
+}
+
 /********************** SECTION FOOTER *********************/
 .section-footer {
   margin-top: 12rem !important;
@@ -353,6 +397,21 @@ span {
   .search-btn,
   .search-input {
     display: none !important;
+  }
+
+  /* SINGLE PRODUCT */
+
+  .section-product {
+    flex-direction: column;
+  }
+
+  .single-prod-img {
+    width: 100%;
+    margin-right: 0;
+  }
+
+  .single-prod-details {
+    width: 100%;
   }
 }
 

@@ -95,7 +95,7 @@ span {
 }
 
 .products-sub-head {
-  margin-bottom: 6rem !important;
+  margin-bottom: 3rem !important;
 }
 
 .gdn {
@@ -356,9 +356,11 @@ span {
 }
 
 .blog-box {
+  position: relative;
   display: flex;
   align-items: center;
   width: 100%;
+  padding-bottom: 90px;
 }
 
 .blog-img {
@@ -373,6 +375,104 @@ span {
 
 .blog-details {
   width: 50%;
+}
+
+.blog-details a {
+  position: relative;
+  text-decoration: none;
+  font-size: 14px;
+  color: #000;
+  font-weight: 700;
+}
+
+.blog-details a::after {
+  content: "";
+  width: 50px;
+  height: 1px;
+  background-color: #000;
+  position: absolute;
+  top: 9px;
+  right: -60px;
+}
+
+.blog-details a:hover {
+  color: #198754;
+}
+
+.blog-details a:hover::after {
+  background-color: #198754;
+}
+
+.blog-box h2 {
+  position: absolute;
+  top: -60px;
+  left: 0;
+  font-size: 70px;
+  font-weight: 700;
+  color: #c9cbce;
+  z-index: -9;
+}
+
+/********************** SECTION ABOUT-US *******************/
+.about-us-box {
+  display: flex;
+}
+
+.about-us-img-box {
+  padding: 150px 0 150px 100px;
+  width: 50%;
+}
+
+.about-us-img-box img {
+  object-fit: cover;
+  width: 100%;
+}
+
+.about-details-box {
+  padding: 150px 70px 150px 100px;
+  width: 50%;
+}
+
+.retail-outlets {
+  display: grid;
+  /* grid-template-columns: 1fr 1fr 1fr; */
+  gap: 1rem;
+}
+.group {
+  display: flex;
+  gap: 1rem;
+}
+
+.about-details-box h2 {
+  color: #ffa500;
+}
+
+.about-details-box p,
+.about-details-box ul {
+  margin-bottom: 50px;
+}
+
+.outlet {
+  /* display: grid;
+  justify-items: center;
+  align-items: center; */
+  background-color: #198754;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+.outlet h4 {
+  white-space: nowrap;
+}
+
+.outlet h4 {
+  white-space: nowrap;
+}
+
+.outlet ion-icon {
+  height: 50px;
+  width: 50px;
 }
 
 /********************** SECTION FOOTER *********************/
@@ -411,6 +511,42 @@ span {
   }
 
   .single-prod-details {
+    width: 100%;
+  }
+
+  /* BLOG SECTION */
+  .blog-box {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .blog {
+    padding: 100px 20px 0 20px;
+  }
+
+  .blog-img {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 30px;
+  }
+
+  .blog-details {
+    width: 100%;
+  }
+
+  /* ABOUT US SECTION */
+  .about-us-box {
+    flex-direction: column;
+  }
+
+  .about-us-img-box {
+    padding: 20px;
+    width: 100%;
+  }
+
+  .about-details-box {
+    padding: 20px;
     width: 100%;
   }
 }

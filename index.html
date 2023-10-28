@@ -30,10 +30,7 @@
     </div>
 
     <nav class="navbar navbar-expand-md bg-light p-3 sticky-top">
-      <div class="container-fluid mx-auto w-75">
-        <a class="navbar-brand" href="#"
-          ><img class="logo" src="images/cropped-hydropet-logo.png" alt=""
-        /></a>
+      <div class="container-fluid mx-auto">
         <button
           class="navbar-toggler"
           type="button"
@@ -46,6 +43,9 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
+          <a class="navbar-brand" href="#"
+            ><img class="logo" src="images/cropped-hydropet-logo.png" alt=""
+          /></a>
           <ul class="navbar-nav me-auto mb-2 ms-5 mb-md-0 gap-4">
             <li class="nav-item">
               <a class="nav-link text-black active" aria-current="page" href="#"
@@ -69,10 +69,10 @@
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link text-black" href="#">About</a>
+              <a class="nav-link text-black" href="about.html">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-black disabled">Blog</a>
+              <a href="blog.html" class="nav-link text-black">Blog</a>
             </li>
           </ul>
           <!-- <form class="d-flex" role="search">
@@ -235,7 +235,7 @@
     <!------------------- FEATURED PRODUCTS ----------------------->
     <section class="section-featured-products">
       <div class="container px-4 py-5 mx-auto" id="featured-3">
-        <h2 class="pb-2 border-bottom">Featured Products</h2>
+        <h2 class="pb-2 border-bottom">Explore Our Products</h2>
         <p class="products-sub-head">
           Discover an Exclusive Array of High-Quality Gas and Gas-Related
           Products! From top-tier fuels to cutting-edge accessories, our curated
@@ -264,7 +264,10 @@
                   <span class="rating-number">(64)</span>
                 </div>
                 <div class="mb-3">
-                  <h5 class="title py-2">
+                  <h5
+                    class="title py-2"
+                    onclick="window.location.href='product.html';"
+                  >
                     <small class="prod-name greyish">Green Gas Cylinder </small>
                   </h5>
                   <div class="product-price-variant gap5">

@@ -21,19 +21,15 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
-    <title>HydroGas-Shop</title>
+    <title>HydroGas-About</title>
   </head>
   <body>
-    <div class="p-1 grid gap-3 bg-success text-white d-flex">
+    <!-- <div class="p-1 grid gap-3 bg-success text-white d-flex">
       <p><ion-icon name="mail-sharp"></ion-icon>info@hydrogas.com.ng</p>
       <p><ion-icon name="phone-portrait-sharp"></ion-icon>+234-706-964-2083</p>
-    </div>
-
-    <nav class="navbar navbar-expand-md navbar-dark bg-light p-3 sticky-top">
+    </div> -->
+    <nav class="navbar navbar-expand-md bg-light p-3 sticky-top">
       <div class="container-fluid mx-auto">
-        <a class="navbar-brand" href="#"
-          ><img class="logo" src="images/cropped-hydropet-logo.png" alt=""
-        /></a>
         <button
           class="navbar-toggler"
           type="button"
@@ -46,6 +42,9 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
+          <a class="navbar-brand" href="#"
+            ><img class="logo" src="images/cropped-hydropet-logo.png" alt=""
+          /></a>
           <ul class="navbar-nav me-auto mb-2 ms-5 mb-md-0 gap-4">
             <li class="nav-item">
               <a
@@ -64,7 +63,10 @@
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link text-black active" aria-current="page" href="#"
+              <a
+                class="nav-link text-black active"
+                aria-current="page"
+                href="shop.html"
                 >Shop</a
               >
             </li>
@@ -72,30 +74,44 @@
               <a class="nav-link text-black" href="about.html">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-black" href="blog.html">Blog</a>
+              <a href="blog.html" class="nav-link text-black">Blog</a>
             </li>
           </ul>
-          <form class="d-flex" role="search">
+          <!-- <form class="d-flex" role="search">
             <input
               class="form-control me-2 p-2"
+              id="search-input"
               type="search"
               placeholder="Search"
               aria-label="Search"
             />
             <button
               class="btn btn-outline-success btn-border-orange text-orange p-1"
+              id="search-btn"
               type="submit"
             >
               Search
             </button>
-
+          </form> -->
+          <div class="d-flex mt-2">
             <button
               class="btn btn-outline-success bg-success text-white p-1 text-nowrap ms-3 px-3"
               type="submit"
             >
               Order a Refill
             </button>
-          </form>
+            <button
+              class="button-cart btn bg-success text-white d-flex p-1 text-nowrap ms-3 px-3"
+            >
+              <ion-icon
+                name="cart"
+                style="height: 1.8rem; width: 1.8rem"
+              ></ion-icon>
+              <div class="cart-number-box">
+                <span class="cart-number text-white">15</span>
+              </div>
+            </button>
+          </div>
         </div>
       </div>
     </nav>
@@ -125,11 +141,11 @@
           />
         </div>
         <div class="blog-details">
-          <h4>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</h4>
+          <h4>Choosing the Right Fuel: A Guide for Consumers in Nigeria</h4>
           <p>
-            Ipsum quasi dignissimos reiciendis sit maiores excepturi, nisi
-            nostrum recusandae dolor, minus eius quo asperiores quae. Enim
-            aliquid exercitationem fuga et saepe. Dignissimos reiciendis
+            We'll walk you through the different types of petroleum products
+            available in the Nigerian market, helping you select the right fuel
+            for your specific needs.
           </p>
 
           <a href="">Continue Reading</a>
@@ -146,11 +162,11 @@
           />
         </div>
         <div class="blog-details">
-          <h4>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</h4>
+          <h4>Safety First: Best Practices for Handling Petroleum Products</h4>
           <p>
-            Ipsum quasi dignissimos reiciendis sit maiores excepturi, nisi
-            nostrum recusandae dolor, minus eius quo asperiores quae. Enim
-            aliquid exercitationem fuga et saepe. Dignissimos reiciendis
+            Safety is paramount when dealing with oil and gas products. This
+            section provides practical tips for safe storage, handling, and
+            transportation of petroleum products at home and in the workplace.
           </p>
 
           <a href="">Continue Reading</a>
@@ -163,11 +179,13 @@
           <img src="images/pexels-pixabay-257700.jpg" width="100%" alt="" />
         </div>
         <div class="blog-details">
-          <h4>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</h4>
+          <h4>
+            Customer Support and Services: What to Expect from Your Retailer
+          </h4>
           <p>
-            Ipsum quasi dignissimos reiciendis sit maiores excepturi, nisi
-            nostrum recusandae dolor, minus eius quo asperiores quae. Enim
-            aliquid exercitationem fuga et saepe. Dignissimos reiciendis
+            The importance of excellent customer service in the oil and gas
+            retail industry and how it can enhance your overall experience as a
+            consumer.
           </p>
 
           <a href="">Continue Reading</a>
@@ -184,11 +202,13 @@
           />
         </div>
         <div class="blog-details">
-          <h4>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</h4>
+          <h4>
+            Quality Assurance: Ensuring the Purity of Your Petroleum Products
+          </h4>
           <p>
-            Ipsum quasi dignissimos reiciendis sit maiores excepturi, nisi
-            nostrum recusandae dolor, minus eius quo asperiores quae. Enim
-            aliquid exercitationem fuga et saepe. Dignissimos reiciendis
+            Learn about the stringent quality control measures that reputable
+            oil and gas retail companies implement to guarantee the purity and
+            safety of their products.
           </p>
 
           <a href="">Continue Reading</a>
@@ -220,16 +240,16 @@
               <a href="#" class="nav-link p-0 text-muted">Home</a>
             </li>
             <li class="nav-item mb-2">
-              <a href="#" class="nav-link p-0 text-muted">Features</a>
+              <a href="#" class="nav-link p-0 text-muted">Services</a>
             </li>
             <li class="nav-item mb-2">
-              <a href="#" class="nav-link p-0 text-muted">Pricing</a>
-            </li>
-            <li class="nav-item mb-2">
-              <a href="#" class="nav-link p-0 text-muted">FAQs</a>
+              <a href="#" class="nav-link p-0 text-muted">Shop</a>
             </li>
             <li class="nav-item mb-2">
               <a href="#" class="nav-link p-0 text-muted">About</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-muted">Blog</a>
             </li>
           </ul>
         </div>

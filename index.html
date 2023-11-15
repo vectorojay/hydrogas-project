@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="queries.css" />
     <link href="navbar-top-fixed.css" rel="stylesheet" />
     <link
       rel="canonical"
@@ -24,16 +25,6 @@
     <title>HydroGas-Home</title>
   </head>
   <body>
-    <!-- <div class="p-1 grid gap-3 bg-success text-white">
-      <p class="pre-nav">
-        <ion-icon class="text-nowrap" name="mail-sharp"></ion-icon
-        >info@hydrogas.com.ng
-      </p>
-      <p class="pre-nav">
-        <ion-icon name="phone-portrait-sharp"></ion-icon>+234-706-964-2083
-      </p>
-    </div> -->
-
     <nav class="navbar navbar-expand-md bg-light p-3 sticky-top">
       <div class="container-fluid mx-auto">
         <button
@@ -48,7 +39,7 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
-          <a class="navbar-brand" href="#"
+          <a class="navbar-brand" href="index.html"
             ><img class="logo" src="images/cropped-hydropet-logo.png" alt=""
           /></a>
           <ul class="navbar-nav me-auto mb-2 ms-5 mb-md-0 gap-4">
@@ -79,9 +70,6 @@
             <li class="nav-item">
               <a class="nav-link text-black" href="about.html">About</a>
             </li>
-            <li class="nav-item">
-              <a href="blog.html" class="nav-link text-black">Blog</a>
-            </li>
           </ul>
           <!-- <form class="d-flex" role="search">
             <input
@@ -102,13 +90,13 @@
           <div class="d-flex mt-2">
             <a
               href="javascript:void(Tawk_API.toggle())"
-              class="btn btn-outline-success bg-success text-white p-1 text-nowrap ms-3 px-3"
+              class="btn btn-outline-success text-success p-1 text-nowrap ms-3 px-3"
               type="submit"
             >
               Order a Refill
             </a>
             <button
-              class="button-cart btn bg-success text-white d-flex p-1 text-nowrap ms-3 px-3"
+              class="button-cart btn text-success d-flex p-1 text-nowrap ms-3 px-3"
               onclick="window.location.href='cart.html';"
             >
               <ion-icon
@@ -123,11 +111,12 @@
         </div>
       </div>
     </nav>
+
     <section class="section-hero">
       <div class="backdrop">
         <div class="container col-xxl-8 px-4 py-5 w-75 mx-auto">
           <div class="align-items-center g-5 py-5">
-            <div class="col-lg-6">
+            <div class="hero-details-box col-lg-6">
               <h1 class="display-5 fw-bold lh-1 mb-3 text-white">
                 AT <span class="text-success">HYDRO</span
                 ><span class="">PET</span>, <br />WE RENDER FAST, TIMELY AND
@@ -161,431 +150,297 @@
         </div>
       </div>
     </section>
-    <section class="section-features mt-5">
-      <div class="container px-4 py-5 mx-auto" id="featured-3">
-        <h2 class="pb-2 border-bottom">What We Do?</h2>
-        <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
-          <div class="feature col py-3">
-            <div
-              class="feature-icon d-inline-flex align-items-center justify-content-center fs-2 mb-3"
-            >
-              <ion-icon
-                class="feature-icon-cstm text-success"
-                name="server-outline"
-              ></ion-icon>
-            </div>
-            <h3 class="fs-2 mb-2">Gas Refill Services</h3>
-            <p class="features-paragraph mb-3">
-              Paragraph of text beneath the heading to explain the heading.
-              We'll add onto it with another sentence and probably just keep
-              going until we run out of words.
-            </p>
-            <a
-              href="services.html"
-              class="d-inline-flex align-items-center icon-link-color"
-            >
-              Read More...
-              <svg class="bi" width="1em" height="1em">
-                <use xlink:href="#chevron-right" />
-              </svg>
-            </a>
-          </div>
-          <div class="feature col py-3">
-            <div
-              class="feature-icon d-inline-flex align-items-center justify-content-center fs-2 mb-3"
-            >
-              <ion-icon
-                class="feature-icon-cstm text-success"
-                name="arrow-redo-outline"
-              ></ion-icon>
-            </div>
-            <h3 class="fs-2 mb-2">Gas & Accessories Sales</h3>
-            <p class="features-paragraph mb-3">
-              Paragraph of text beneath the heading to explain the heading.
-              We'll add onto it with another sentence and probably just keep
-              going until we run out of words.
-            </p>
-            <a
-              href="services.html"
-              class="d-inline-flex align-items-center icon-link-color"
-            >
-              Read More...
-              <svg class="bi" width="1em" height="1em">
-                <use xlink:href="#chevron-right" />
-              </svg>
-            </a>
-          </div>
-          <div class="feature col py-3">
-            <div
-              class="feature-icon d-inline-flex align-items-center justify-content-center fs-2 mb-3"
-            >
-              <ion-icon
-                class="feature-icon-cstm text-success"
-                name="checkmark-circle-outline"
-              ></ion-icon>
-            </div>
-            <h3 class="fs-2 mb-2">Servicing & Maintenance</h3>
-            <p class="features-paragraph mb-3">
-              Paragraph of text beneath the heading to explain the heading.
-              We'll add onto it with another sentence and probably just keep
-              going until we run out of words.
-            </p>
-            <a
-              href="services.html"
-              class="d-inline-flex align-items-center icon-link-color"
-            >
-              Read More...
-              <svg class="bi" width="1em" height="1em">
-                <use xlink:href="#chevron-right" />
-              </svg>
-            </a>
-          </div>
+
+    <section class="section-achievements">
+      <div class="achievements-box d-flex justify-content-center">
+        <div class="achievement">
+          <p>200+</p>
+          <span>Customers</span>
+        </div>
+        <div class="achievement">
+          <p class="green">1200+</p>
+          <span>Deliveries Made</span>
+        </div>
+        <div class="achievement">
+          <p>10+</p>
+          <span>Branches Nationwide</span>
         </div>
       </div>
     </section>
 
-    <!------------------- FEATURED PRODUCTS ----------------------->
     <section class="section-featured-products">
-      <div class="container px-4 py-5 mx-auto" id="featured-3">
-        <h2 class="pb-2 border-bottom">Explore Our Products</h2>
-        <p class="products-sub-head">
-          Discover an Exclusive Array of High-Quality Gas and Gas-Related
-          Products! From top-tier fuels to cutting-edge accessories, our curated
-          selection is designed to enhance performance and deliver optimum
-          results for all your energy needs. Browse through our featured
-          offerings and experience the difference in quality and reliability."
-        </p>
-        <div class="products-shadow">
-          <div class="row mx-auto w-100 justify-content-center gap-3 px-4 mb-5">
-            <div
-              class="card"
-              onclick="window.location.href='product.html';"
-              style="width: 18rem"
-            >
-              <img
-                src="images/8816656.webp"
-                class="card-img-top"
-                alt="..."
-                style="height: 100%"
-              />
-              <div class="card-body px-4 py-4">
-                <div class="product-rating py-2">
-                  <span class="icon ratingColor">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                  </span>
-                  <span class="rating-number">(64)</span>
-                </div>
-                <div class="mb-3">
-                  <h5 class="title py-2">
-                    <small class="prod-name greyish">Green Gas Cylinder </small>
-                  </h5>
-                  <div class="product-price-variant gap5">
-                    <span class="price current-price smallBoldF">N8500.00</span>
-                    <span class="price old-price priceLine">N12500.00</span>
-                  </div>
-                </div>
+      <h3>Featured Products</h3>
+      <div class="featured-product-box">
+        <div class="featured-product" height="200px">
+          <div class="featured-product-backdrop">
+            <span class="z-3 text-white">Cylinders</span>
+          </div>
+          <img src="images/8816656.webp" alt="" />
+        </div>
+        <div class="featured-product" height="200px">
+          <div class="featured-product-backdrop">
+            <span class="z-3 text-white">Valves</span>
+          </div>
+          <img src="images/v326-industrial-gas-valves.jpg" alt="" />
+        </div>
+        <div class="featured-product" height="200px">
+          <div class="featured-product-backdrop">
+            <span class="z-3 text-white">Fittings</span>
+          </div>
+          <img src="images/54845a9c-7336-4b21-9f7a-ed08c40bcd40.jpg" alt="" />
+        </div>
+        <div class="featured-product" height="200px">
+          <div class="featured-product-backdrop">
+            <span class="z-3 text-white">Arrestors</span>
+          </div>
+          <img src="images/arrestors.jpg" alt="" />
+        </div>
+        <div class="featured-product" height="200px">
+          <div class="featured-product-backdrop">
+            <span class="z-3 text-white">Hoses</span>
+          </div>
+          <img src="images/hoses1.png" alt="" />
+        </div>
+        <div class="featured-product" height="200px">
+          <div class="featured-product-backdrop">
+            <span class="z-3 text-white">Burners</span>
+          </div>
+          <img src="images/burner.jpeg" alt="" />
+        </div>
+        <div class="featured-product" height="200px">
+          <div class="featured-product-backdrop">
+            <span class="z-3 text-white">Knobs</span>
+          </div>
+          <img src="images/stand.jpeg" alt="" />
+        </div>
+      </div>
+    </section>
 
-                <div
-                  class="d-flex flex-row justify-content-start align-items-center gap-2 mt-1"
-                >
-                  <i class="fa fa-eye eyeicon"></i>
-
-                  <i class="fa fa-shopping-basket eyeicon darkBlue"></i>
-
-                  <i class="fa fa-heart eyeicon red"></i>
-                </div>
-              </div>
+    <section class="section-best-deals">
+      <h3>Best Deals For You</h3>
+      <div class="best-deals-box">
+        <div
+          class="best-deal"
+          height="200px"
+          onclick="window.location.href='product.html';"
+        >
+          <div style="height: 300px">
+            <img
+              src="images/Gas Cylinder Small Blue.jpeg"
+              alt=""
+              style="height: 100%; object-fit: cover"
+            />
+          </div>
+          <div class="prod-details">
+            <div class="mb-2 mt-2">
+              <span>9kg</span>
             </div>
-            <div class="card" style="width: 18rem">
-              <img
-                src="images/8829609.webp"
-                class="card-img-top"
-                alt="..."
-                style="height: 100%"
-              />
-              <div class="card-body px-4 py-4">
-                <div class="product-rating py-2">
-                  <span class="icon ratingColor">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                  </span>
-                  <span class="rating-number">(64)</span>
-                </div>
-                <div class="mb-3">
-                  <h5 class="title py-2">
-                    <small class="prod-name greyish"
-                      >Orange Gas Cylinder
-                    </small>
-                  </h5>
-                  <div class="product-price-variant gap5">
-                    <span class="price current-price smallBoldF">N8500.00</span>
-                    <span class="price old-price priceLine">N12500.00</span>
-                  </div>
-                </div>
-
-                <div
-                  class="d-flex flex-row justify-content-start align-items-center gap-2 mt-1"
-                >
-                  <i class="fa fa-eye eyeicon"></i>
-
-                  <i class="fa fa-shopping-basket eyeicon darkBlue"></i>
-
-                  <i class="fa fa-heart eyeicon red"></i>
-                </div>
-              </div>
-            </div>
-            <div class="card" style="width: 18rem">
-              <img
-                src="images/3d-rendering-gas-cylinder-removebg-preview.png"
-                class="card-img-top"
-                alt="..."
-                style="height: 100%"
-              />
-              <div class="card-body px-4 py-4">
-                <div class="product-rating py-2">
-                  <span class="icon ratingColor">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                  </span>
-                  <span class="rating-number">(64)</span>
-                </div>
-                <div class="mb-3">
-                  <h5 class="title py-2">
-                    <small class="prod-name greyish">Red Gas Cylinder </small>
-                  </h5>
-                  <div class="product-price-variant gap5">
-                    <span class="price current-price smallBoldF">N8500.00</span>
-                    <span class="price old-price priceLine">N12500.00</span>
-                  </div>
-                </div>
-
-                <div
-                  class="d-flex flex-row justify-content-start align-items-center gap-2 mt-1"
-                >
-                  <i class="fa fa-eye eyeicon"></i>
-
-                  <i class="fa fa-shopping-basket eyeicon darkBlue"></i>
-
-                  <i class="fa fa-heart eyeicon red"></i>
-                </div>
-              </div>
-            </div>
-            <div class="card" style="width: 18rem">
-              <img
-                src="images/8829612.webp"
-                class="card-img-top"
-                alt="..."
-                style="height: 100%"
-              />
-              <div class="card-body px-4 py-4">
-                <div class="product-rating py-2">
-                  <span class="icon ratingColor">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                  </span>
-                  <span class="rating-number">(64)</span>
-                </div>
-                <div class="mb-3">
-                  <h5 class="title py-2">
-                    <small class="prod-name greyish">Ash Gas Cylinder </small>
-                  </h5>
-                  <div class="product-price-variant gap5">
-                    <span class="price current-price smallBoldF">N8500.00</span>
-                    <span class="price old-price priceLine">N12500.00</span>
-                  </div>
-                </div>
-
-                <div
-                  class="d-flex flex-row justify-content-start align-items-center gap-2 mt-1"
-                >
-                  <i class="fa fa-eye eyeicon"></i>
-
-                  <i class="fa fa-shopping-basket eyeicon darkBlue"></i>
-
-                  <i class="fa fa-heart eyeicon red"></i>
-                </div>
-              </div>
+            <h5>Blue Gas Cylinder</h5>
+            <div class="product-price-variant gap5">
+              <span class="price current-price smallBoldF">N8500.00</span>
+              <span class="price old-price priceLine">N12500.00</span>
             </div>
           </div>
-
-          <div class="row mx-auto w-100 justify-content-center gap-3 px-4">
-            <div class="card" style="width: 18rem">
-              <img
-                src="images/8829609.webp"
-                class="card-img-top"
-                alt="..."
-                style="height: 100%"
-              />
-              <div class="card-body px-4 py-4">
-                <div class="product-rating py-2">
-                  <span class="icon ratingColor">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                  </span>
-                  <span class="rating-number">(64)</span>
-                </div>
-                <div class="mb-3">
-                  <h5 class="title py-2">
-                    <small class="prod-name greyish"
-                      >Orange Gas Cylinder
-                    </small>
-                  </h5>
-                  <div class="product-price-variant gap5">
-                    <span class="price current-price smallBoldF">N8500.00</span>
-                    <span class="price old-price priceLine">N12500.00</span>
-                  </div>
-                </div>
-
-                <div
-                  class="d-flex flex-row justify-content-start align-items-center gap-2 mt-1"
-                >
-                  <i class="fa fa-eye eyeicon"></i>
-
-                  <i class="fa fa-shopping-basket eyeicon darkBlue"></i>
-
-                  <i class="fa fa-heart eyeicon red"></i>
-                </div>
-              </div>
+          <div
+            class="prod-btn-box d-flex flex-row justify-content-start align-items-center gap-2 mt-2"
+          >
+            <button class="btn text-success border-success">
+              Add to cart
+              <i class="fa fa-shopping-cart ms-1"></i>
+            </button>
+          </div>
+        </div>
+        <div class="best-deal" height="200px">
+          <div style="height: 300px">
+            <img
+              src="images/15kg-LPG-Gas-Cylinder-Grey.jpg"
+              alt=""
+              style="height: 100%; object-fit: cover"
+            />
+          </div>
+          <div class="prod-details">
+            <div class="mb-2 mt-2">
+              <span>12.5kg</span>
             </div>
-            <div class="card" style="width: 18rem">
-              <img
-                src="images/8816656.webp"
-                class="card-img-top"
-                alt="..."
-                style="height: 100%"
-              />
-              <div class="card-body px-4 py-4">
-                <div class="product-rating py-2">
-                  <span class="icon ratingColor">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                  </span>
-                  <span class="rating-number">(64)</span>
-                </div>
-                <div class="mb-3">
-                  <h5 class="title py-2">
-                    <small class="prod-name greyish">Green Gas Cylinder </small>
-                  </h5>
-                  <div class="product-price-variant gap5">
-                    <span class="price current-price smallBoldF">N8500.00</span>
-                    <span class="price old-price priceLine">N12500.00</span>
-                  </div>
-                </div>
-
-                <div
-                  class="d-flex flex-row justify-content-start align-items-center gap-2 mt-1"
-                >
-                  <i class="fa fa-eye eyeicon"></i>
-
-                  <i class="fa fa-shopping-basket eyeicon darkBlue"></i>
-
-                  <i class="fa fa-heart eyeicon red"></i>
-                </div>
-              </div>
+            <h5>Grey Gas Cylinder</h5>
+            <div class="product-price-variant gap5">
+              <span class="price current-price smallBoldF">N8500.00</span>
+              <span class="price old-price priceLine">N12500.00</span>
             </div>
-            <div class="card" style="width: 18rem">
-              <img
-                src="images/8829612.webp"
-                class="card-img-top"
-                alt="..."
-                style="height: 100%"
-              />
-              <div class="card-body px-4 py-4">
-                <div class="product-rating py-2">
-                  <span class="icon ratingColor">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                  </span>
-                  <span class="rating-number">(64)</span>
-                </div>
-                <div class="mb-3">
-                  <h5 class="title py-2">
-                    <small class="prod-name greyish">Ash Gas Cylinder </small>
-                  </h5>
-                  <div class="product-price-variant gap5">
-                    <span class="price current-price smallBoldF">N8500.00</span>
-                    <span class="price old-price priceLine">N12500.00</span>
-                  </div>
-                </div>
-
-                <div
-                  class="d-flex flex-row justify-content-start align-items-center gap-2 mt-1"
-                >
-                  <i class="fa fa-eye eyeicon"></i>
-
-                  <i class="fa fa-shopping-basket eyeicon darkBlue"></i>
-
-                  <i class="fa fa-heart eyeicon red"></i>
-                </div>
-              </div>
+          </div>
+          <div
+            class="prod-btn-box d-flex flex-row justify-content-start align-items-center gap-2 mt-2"
+          >
+            <button class="btn text-success border-success">
+              Add to cart
+              <i class="fa fa-shopping-cart ms-1"></i>
+            </button>
+          </div>
+        </div>
+        <div class="best-deal" height="200px">
+          <div style="height: 300px">
+            <img
+              src="images/LPG-Gas-Cylinder-for-Cooking-12.5kg-Green.jpg"
+              alt=""
+              style="height: 100%; object-fit: cover"
+            />
+          </div>
+          <div class="prod-details">
+            <div class="mb-2 mt-2">
+              <span>12kg</span>
             </div>
-            <div class="card" style="width: 18rem">
-              <img
-                src="images/steel-oxygen-tanks-arrangement.webp"
-                class="card-img-top"
-                alt="..."
-                style="height: 100%"
-              />
-              <div class="card-body px-4 py-4">
-                <div class="product-rating py-2">
-                  <span class="icon ratingColor">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                  </span>
-                  <span class="rating-number">(64)</span>
-                </div>
-                <div class="mb-3">
-                  <h5 class="title py-2">
-                    <small class="prod-name greyish"
-                      >Steel Gas Cylinder (Long)
-                    </small>
-                  </h5>
-                  <div class="product-price-variant gap5">
-                    <span class="price current-price smallBoldF">N8500.00</span>
-                    <span class="price old-price priceLine">N12500.00</span>
-                  </div>
-                </div>
-
-                <div
-                  class="d-flex flex-row justify-content-start align-items-center gap-2 mt-1"
-                >
-                  <i class="fa fa-eye eyeicon"></i>
-
-                  <i class="fa fa-shopping-basket eyeicon darkBlue"></i>
-
-                  <i class="fa fa-heart eyeicon red"></i>
-                </div>
-              </div>
+            <h5>Green Cylinder Product</h5>
+            <div class="product-price-variant gap5">
+              <span class="price current-price smallBoldF">N8500.00</span>
+              <span class="price old-price priceLine">N12500.00</span>
             </div>
+          </div>
+          <div
+            class="prod-btn-box d-flex flex-row justify-content-start align-items-center gap-2 mt-2"
+          >
+            <button class="btn text-success border-success">
+              Add to cart
+              <i class="fa fa-shopping-cart ms-1"></i>
+            </button>
+          </div>
+        </div>
+        <div class="best-deal" height="200px">
+          <div style="height: 300px">
+            <img
+              src="images/12-5kg_29L-400-400.webp"
+              alt=""
+              style="height: 100%; object-fit: cover"
+            />
+          </div>
+          <div class="prod-details">
+            <div class="mb-2 mt-2">
+              <span>12kg</span>
+            </div>
+            <h5>Red Gas Cylinder</h5>
+            <div class="product-price-variant gap5">
+              <span class="price current-price smallBoldF">N8500.00</span>
+              <span class="price old-price priceLine">N12500.00</span>
+            </div>
+          </div>
+          <div
+            class="prod-btn-box d-flex flex-row justify-content-start align-items-center gap-2 mt-2"
+          >
+            <button class="btn text-success border-success">
+              Add to cart
+              <i class="fa fa-shopping-cart ms-1"></i>
+            </button>
+          </div>
+        </div>
+        <div class="best-deal" height="200px">
+          <div style="height: 300px">
+            <img
+              src="images/lpg-gas-cylinder-turquoise.jpg"
+              alt=""
+              style="height: 100%; object-fit: cover"
+            />
+          </div>
+          <div class="prod-details">
+            <div class="mb-2 mt-2">
+              <span>12kg</span>
+            </div>
+            <h5>Green Cylinder Product</h5>
+            <div class="product-price-variant gap5">
+              <span class="price current-price smallBoldF">N8500.00</span>
+              <span class="price old-price priceLine">N12500.00</span>
+            </div>
+          </div>
+          <div
+            class="prod-btn-box d-flex flex-row justify-content-start align-items-center gap-2 mt-2"
+          >
+            <button class="btn text-success border-success">
+              Add to cart
+              <i class="fa fa-shopping-cart ms-1"></i>
+            </button>
+          </div>
+        </div>
+        <div class="best-deal" height="200px">
+          <div style="height: 300px">
+            <img
+              src="images/Grass Green.jpg"
+              alt=""
+              style="height: 100%; object-fit: cover"
+            />
+          </div>
+          <div class="prod-details">
+            <div class="mb-2 mt-2">
+              <span>12kg</span>
+            </div>
+            <h5>Green Cylinder Product</h5>
+            <div class="product-price-variant gap5">
+              <span class="price current-price smallBoldF">N8500.00</span>
+              <span class="price old-price priceLine">N12500.00</span>
+            </div>
+          </div>
+          <div
+            class="prod-btn-box d-flex flex-row justify-content-start align-items-center gap-2 mt-2"
+          >
+            <button class="btn text-success border-success">
+              Add to cart
+              <i class="fa fa-shopping-cart ms-1"></i>
+            </button>
+          </div>
+        </div>
+        <div class="best-deal" height="200px">
+          <div style="height: 300px">
+            <img
+              src="images/25kg-GasCylinder.webp"
+              alt=""
+              style="height: 100%; object-fit: cover"
+            />
+          </div>
+          <div class="prod-details">
+            <div class="mb-2 mt-2">
+              <span>25kg</span>
+            </div>
+            <h5>Orange Gas Cylinder</h5>
+            <div class="product-price-variant gap5">
+              <span class="price current-price smallBoldF">N8500.00</span>
+              <span class="price old-price priceLine">N12500.00</span>
+            </div>
+          </div>
+          <div
+            class="prod-btn-box d-flex flex-row justify-content-start align-items-center gap-2 mt-2"
+          >
+            <button class="btn text-success border-success">
+              Add to cart
+              <i class="fa fa-shopping-cart ms-1"></i>
+            </button>
+          </div>
+        </div>
+        <div class="best-deal" height="200px">
+          <div style="height: 300px">
+            <img
+              src="images/3kg_10L-460-460.webp"
+              alt=""
+              style="height: 100%; object-fit: cover"
+            />
+          </div>
+          <div class="prod-details">
+            <div class="mb-2 mt-2">
+              <span>12kg</span>
+            </div>
+            <h5>Green Cylinder Product</h5>
+            <div class="product-price-variant gap5">
+              <span class="price current-price smallBoldF">N8500.00</span>
+              <span class="price old-price priceLine">N12500.00</span>
+            </div>
+          </div>
+          <div
+            class="prod-btn-box d-flex flex-row justify-content-start align-items-center gap-2 mt-2"
+          >
+            <button class="btn text-success border-success">
+              Add to cart
+              <i class="fa fa-shopping-cart ms-1"></i>
+            </button>
           </div>
         </div>
       </div>
-      <div class="d-flex align-items-center justify-content-center py-5">
+      <div class="d-flex align-items-center justify-content-center py-5 mt-5">
         <button
           class="view-btn btn btn-outline-success btn-lg text-success"
           onclick="window.location.href='shop.html';"
@@ -595,99 +450,414 @@
       </div>
     </section>
 
-    <!----------------------- SECTION ABOUT ------------------------->
-    <section class="section-about">
-      <div class="container px-4 py-5 mx-auto" id="featured-3">
-        <h2 class="pb-2 border-bottom">About Us</h2>
+    <section class="section-services">
+      <h3>Our Services</h3>
+      <div class="services-box">
+        <div class="service">
+          <div class="service-icon-box me-2">
+            <i class="service-icon fa fa-gas-pump fa- fa-fade fa-xl"></i>
+          </div>
+          <div class="service-details">
+            <h5>Refill Services</h5>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+          </div>
+        </div>
+        <div class="service">
+          <div class="service-icon-box me-2">
+            <i class="service-icon fa fa-toolbox fa-2 fa-fade fa-xl"></i>
+          </div>
+          <div class="service-details">
+            <h5>Accessories Sales</h5>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+          </div>
+        </div>
+        <div class="service">
+          <div class="service-icon-box me-2">
+            <i
+              class="service-icon fa fa-screwdriver-wrench fa-fade wrench fa-xl"
+            ></i>
+          </div>
+          <div class="service-details">
+            <h5>Servicing & Maintenance</h5>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+          </div>
+        </div>
+        <div class="service">
+          <div class="service-icon-box me-2">
+            <i class="service-icon fa fa-paint-roller fa-fade fa-xl"></i>
+          </div>
+          <div class="service-details">
+            <h5>Retouch Services</h5>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+          </div>
+        </div>
+        <div class="service">
+          <div class="service-icon-box me-2">
+            <i class="service-icon fa fa-droplet fa-2 fa-fade fa-xl"></i>
+          </div>
+          <div class="service-details">
+            <h5>Petroleum Retail</h5>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+          </div>
+        </div>
+        <div class="service">
+          <div class="service-icon-box me-2">
+            <i class="service-icon fa fa-truck fa-xl fa-fade"></i>
+          </div>
+          <div class="service-details">
+            <h5>Bulk Supply</h5>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+          </div>
+        </div>
+        <div class="service">
+          <div class="service-icon-box me-2">
+            <i class="service-icon fa fa-cart-flatbed fa-fade fa-xl"></i>
+          </div>
+          <div class="service-details">
+            <h5>Pick & Drop</h5>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+          </div>
+        </div>
+        <div class="service">
+          <div class="service-icon-box me-2">
+            <i class="service-icon fa fa-fire-burner fa-fade fa-xl"></i>
+          </div>
+          <div class="service-details">
+            <h5>High Quality LPG</h5>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+          </div>
+        </div>
       </div>
-      <div class="about-box">
-        <div class="backdrop">
-          <div
-            class="container col-xxl-8 px-4 py-5 w-75 mx-auto"
-            style="height: 100%"
-          >
-            <div class="align-items-center g-5 py-5" style="height: 100%">
-              <div class="col-lg-6">
-                <p class="about-text lead text-white">
-                  We are Hydropet Oil Services Limited, a wholly indigenous
-                  company founded in 2011 and one of the leading names in the
-                  oil and gas industry and marketers of petroleum product such
-                  as petrol (PMS), diesel (AGO), kerosene (DKP) and cooking gas
-                  (LPG) to both retail and bulk users. Over the years, we have
-                  constantly evolved […]
-                </p>
-                <button
-                  class="btn bg-success p-2 text-white mt-5"
-                  onclick="window.location.href='about.html';"
-                >
-                  Read More...
-                </button>
-              </div>
+    </section>
+
+    <section class="section-weekly-popular">
+      <h3>Weekly Popular Products</h3>
+      <div class="section-weekly-box">
+        <div class="best-deal" height="200px">
+          <img src="images/8816656.webp" alt="" />
+          <div class="prod-details">
+            <div class="mb-2 mt-2">
+              <span>12kg</span>
+            </div>
+            <h5>Green Cylinder Product</h5>
+            <div class="product-price-variant gap5">
+              <span class="price current-price smallBoldF">N8500.00</span>
+              <span class="price old-price priceLine">N12500.00</span>
             </div>
           </div>
+          <div
+            class="prod-btn-box d-flex flex-row justify-content-start align-items-center gap-2 mt-2"
+          >
+            <button class="btn text-success border-success">
+              Add to cart
+              <i class="fa fa-shopping-cart ms-1"></i>
+            </button>
+          </div>
+        </div>
+        <div class="best-deal" height="200px">
+          <img src="images/8829612.webp" alt="" />
+          <div class="prod-details">
+            <div class="mb-2 mt-2">
+              <span>12kg</span>
+            </div>
+            <h5>Green Cylinder Product</h5>
+            <div class="product-price-variant gap5">
+              <span class="price current-price smallBoldF">N8500.00</span>
+              <span class="price old-price priceLine">N12500.00</span>
+            </div>
+          </div>
+          <div
+            class="prod-btn-box d-flex flex-row justify-content-start align-items-center gap-2 mt-2"
+          >
+            <button class="btn text-success border-success">
+              Add to cart
+              <i class="fa fa-shopping-cart ms-1"></i>
+            </button>
+          </div>
+        </div>
+        <div class="best-deal" height="200px">
+          <img src="images/8829609.webp" alt="" />
+          <div class="prod-details">
+            <div class="mb-2 mt-2">
+              <span>12kg</span>
+            </div>
+            <h5>Green Cylinder Product</h5>
+            <div class="product-price-variant gap5">
+              <span class="price current-price smallBoldF">N8500.00</span>
+              <span class="price old-price priceLine">N12500.00</span>
+            </div>
+          </div>
+          <div
+            class="prod-btn-box d-flex flex-row justify-content-start align-items-center gap-2 mt-2"
+          >
+            <button class="btn text-success border-success">
+              Add to cart
+              <i class="fa fa-shopping-cart ms-1"></i>
+            </button>
+          </div>
+        </div>
+
+        <div class="best-deal" height="200px">
+          <img src="images/8816656.webp" alt="" />
+          <div class="prod-details">
+            <div class="mb-2 mt-2">
+              <span>12kg</span>
+            </div>
+            <h5>Green Cylinder Product</h5>
+            <div class="product-price-variant gap5">
+              <span class="price current-price smallBoldF">N8500.00</span>
+              <span class="price old-price priceLine">N12500.00</span>
+            </div>
+          </div>
+          <div
+            class="prod-btn-box d-flex flex-row justify-content-start align-items-center gap-2 mt-2"
+          >
+            <button class="btn text-success border-success">
+              Add to cart
+              <i class="fa fa-shopping-cart ms-1"></i>
+            </button>
+          </div>
         </div>
       </div>
     </section>
 
-    <!------------------- SECTION OBJECTIVES ----------------------->
-    <section class="section-objectives w-100 mx-auto">
-      <div class="objectives-box d-flex w-75 mx-auto py-5 mt-5 gap-2">
-        <div class="card">
-          <img
-            class="objectives-img"
-            src="images/modern-office-buildings-city.webp"
-            class="card-img-top"
-            alt="..."
-          />
-          <div class="card-body bg-success">
-            <p class="card-text text-center py-2 text-white">Our Mission</p>
+    <section class="section-help">
+      <div>
+        <h3>Supportive Services To Help You Shop</h3>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt
+          quaerat labore unde harum deserunt ipsum asperiores, itaque suscipit
+          quis quasi iure. Sequi officiis reprehenderit eveniet doloremque
+          voluptas adipisci iusto similique.
+        </p>
+      </div>
+      <div class="section-help-box mt-5">
+        <div class="help" style="height: 100%">
+          <div class="help-heading">
+            <h5 onclick="window.location.href='faqs.html';">
+              Frequently Asked <br />
+              Questions
+            </h5>
+            <div class="product-price-variant gap5">
+              <p>
+                Browse through the list of FAQs to have your questions answered.
+              </p>
+            </div>
+          </div>
+          <div
+            class="help-img-box"
+            style="background-color: #ffa500; width: 100%; height: 60%"
+          >
+            <img src="images/17973871.jpg" alt="" height="100%" />
           </div>
         </div>
-        <div class="card">
-          <img
-            class="objectives-img"
-            src="images/building-with-ventilation-pipes.webp"
-            class="card-img-top"
-            alt="..."
-          />
-          <div class="card-body bg-success">
-            <p class="card-text text-center py-2 text-white">
-              Mission Statement
-            </p>
+        <div class="help" style="height: 100%">
+          <div class="help-heading">
+            <h5 onclick="window.location.href='payment-process.html';">
+              Online Payment <br />
+              Processes
+            </h5>
+            <div class="product-price-variant gap5">
+              <p>
+                Check through our list of payment methods for seamless
+                transactions.
+              </p>
+            </div>
+          </div>
+          <div
+            class="help-img-box"
+            style="background-color: #ffa500; width: 100%; height: 60%"
+          >
+            <img src="images/SL-110820-37810-14.jpg" alt="" height="100%" />
           </div>
         </div>
-        <div class="card">
-          <img
-            class="objectives-img"
-            src="images/close-up-metallic-wine-barrels-winery.webp"
-            class="card-img-top"
-            alt="..."
-          />
-          <div class="card-body bg-success">
-            <p class="card-text text-center py-2 text-white">Uniqueness</p>
+        <div class="help" style="height: 100%">
+          <div class="help-heading">
+            <h5>
+              Home Delivery <br />
+              Options
+            </h5>
+            <div class="product-price-variant gap5">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+            </div>
           </div>
-        </div>
-        <div class="card">
-          <img
-            class="objectives-img"
-            src="images/medium-shot-engineer-wearing-equipment.webp"
-            class="card-img-top"
-            alt="..."
-          />
-          <div class="card-body bg-success">
-            <p class="card-text text-center py-2 text-white">Partnership</p>
+          <div
+            class="help-img-box"
+            style="background-color: #ffa500; width: 100%; height: 60%"
+          >
+            <img src="images/15712.jpg" alt="" height="100%" />
           </div>
         </div>
       </div>
     </section>
 
-    <!--------------------------- SECTION BANNER ------------------------------->
+    <section class="section-cylinders">
+      <h3>Explore our LPG Cylinders</h3>
+      <div class="cylinders-box">
+        <div class="best-deal" height="200px">
+          <img src="images/8829612.webp" alt="" />
+          <div class="prod-details">
+            <div class="mb-2 mt-2">
+              <span>12kg</span>
+            </div>
+            <h5>Green Cylinder Product</h5>
+            <div class="product-price-variant gap5">
+              <span class="price current-price smallBoldF">N8500.00</span>
+              <span class="price old-price priceLine">N12500.00</span>
+            </div>
+          </div>
+          <div
+            class="prod-btn-box d-flex flex-row justify-content-start align-items-center gap-2 mt-2"
+          >
+            <button class="btn text-success border-success">
+              Add to cart
+              <i class="fa fa-shopping-cart ms-1"></i>
+            </button>
+          </div>
+        </div>
+        <div class="best-deal" height="200px">
+          <img src="images/8829609.webp" alt="" />
+          <div class="prod-details">
+            <div class="mb-2 mt-2">
+              <span>12kg</span>
+            </div>
+            <h5>Green Cylinder Product</h5>
+            <div class="product-price-variant gap5">
+              <span class="price current-price smallBoldF">N8500.00</span>
+              <span class="price old-price priceLine">N12500.00</span>
+            </div>
+          </div>
+          <div
+            class="prod-btn-box d-flex flex-row justify-content-start align-items-center gap-2 mt-2"
+          >
+            <button class="btn text-success border-success">
+              Add to cart
+              <i class="fa fa-shopping-cart ms-1"></i>
+            </button>
+          </div>
+        </div>
+        <div class="best-deal" height="200px">
+          <img src="images/8816656.webp" alt="" />
+          <div class="prod-details">
+            <div class="mb-2 mt-2">
+              <span>12kg</span>
+            </div>
+            <h5>Green Cylinder Product</h5>
+            <div class="product-price-variant gap5">
+              <span class="price current-price smallBoldF">N8500.00</span>
+              <span class="price old-price priceLine">N12500.00</span>
+            </div>
+          </div>
+          <div
+            class="prod-btn-box d-flex flex-row justify-content-start align-items-center gap-2 mt-2"
+          >
+            <button class="btn text-success border-success">
+              Add to cart
+              <i class="fa fa-shopping-cart ms-1"></i>
+            </button>
+          </div>
+        </div>
+        <div class="best-deal" height="200px">
+          <img src="images/8829609.webp" alt="" />
+          <div class="prod-details">
+            <div class="mb-2 mt-2">
+              <span>12kg</span>
+            </div>
+            <h5>Green Cylinder Product</h5>
+            <div class="product-price-variant gap5">
+              <span class="price current-price smallBoldF">N8500.00</span>
+              <span class="price old-price priceLine">N12500.00</span>
+            </div>
+          </div>
+          <div
+            class="prod-btn-box d-flex flex-row justify-content-start align-items-center gap-2 mt-2"
+          >
+            <button class="btn text-success border-success">
+              Add to cart
+              <i class="fa fa-shopping-cart ms-1"></i>
+            </button>
+          </div>
+        </div>
+        <div class="best-deal" height="200px">
+          <img src="images/8829609.webp" alt="" />
+          <div class="prod-details">
+            <div class="mb-2 mt-2">
+              <span>12kg</span>
+            </div>
+            <h5>Green Cylinder Product</h5>
+            <div class="product-price-variant gap5">
+              <span class="price current-price smallBoldF">N8500.00</span>
+              <span class="price old-price priceLine">N12500.00</span>
+            </div>
+          </div>
+          <div
+            class="prod-btn-box d-flex flex-row justify-content-start align-items-center gap-2 mt-2"
+          >
+            <button class="btn text-success border-success">
+              Add to cart
+              <i class="fa fa-shopping-cart ms-1"></i>
+            </button>
+          </div>
+        </div>
+        <div class="best-deal" height="200px">
+          <img src="images/8816656.webp" alt="" />
+          <div class="prod-details">
+            <div class="mb-2 mt-2">
+              <span>12kg</span>
+            </div>
+            <h5>Green Cylinder Product</h5>
+            <div class="product-price-variant gap5">
+              <span class="price current-price smallBoldF">N8500.00</span>
+              <span class="price old-price priceLine">N12500.00</span>
+            </div>
+          </div>
+          <div
+            class="prod-btn-box d-flex flex-row justify-content-start align-items-center gap-2 mt-2"
+          >
+            <button class="btn text-success border-success">
+              Add to cart
+              <i class="fa fa-shopping-cart ms-1"></i>
+            </button>
+          </div>
+        </div>
+        <div class="best-deal" height="200px">
+          <img src="images/8816656.webp" alt="" />
+          <div class="prod-details">
+            <div class="mb-2 mt-2">
+              <span>12kg</span>
+            </div>
+            <h5>Green Cylinder Product</h5>
+            <div class="product-price-variant gap5">
+              <span class="price current-price smallBoldF">N8500.00</span>
+              <span class="price old-price priceLine">N12500.00</span>
+            </div>
+          </div>
+          <div
+            class="prod-btn-box d-flex flex-row justify-content-start align-items-center gap-2 mt-2"
+          >
+            <button class="btn text-success border-success">
+              Add to cart
+              <i class="fa fa-shopping-cart ms-1"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="d-flex align-items-center justify-content-center py-5 mt-5">
+        <button
+          class="view-btn btn btn-outline-success btn-lg text-success"
+          onclick="window.location.href='shop.html';"
+        >
+          <i class="fa fa-shop"></i> View all Products
+        </button>
+      </div>
+    </section>
+
     <section class="section-banner d-flex justify-content-center">
       <div class="container py-4">
-        <div class="refill-box p-5 mb-4 bg-light rounded-3 text-white">
+        <div class="refill-box mb-4 bg-light rounded-3 text-white">
           <div class="container-fluid py-5">
             <h1 class="display-5 fw-bold">Refill Your Gas</h1>
-            <p class="col-md-8 fs-4 mb-5">
+            <p class="col-md-8 fs-6 mb-5">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam
               soluta, dolore placeat doloremque nemo alias illum quod asperiores
               commodi reiciendis itaque reprehenderit, aspernatur quas officia
@@ -705,7 +875,7 @@
 
         <div class="row align-items-md-stretch">
           <div class="col-md-6">
-            <div class="repaint-box h-100 p-5 text-bg-success rounded-3">
+            <div class="repaint-box h-100 text-bg-success rounded-3">
               <h2 class="mb-3">Paint Your Gas Bottle</h2>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea
@@ -723,7 +893,7 @@
             </div>
           </div>
           <div class="col-md-6">
-            <div class="accessories-box h-100 p-5 bg-light border rounded-3">
+            <div class="accessories-box h-100 bg-light border rounded-3">
               <h2 class="mb-3">Accessories</h2>
               <p>
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit.
@@ -742,90 +912,6 @@
         </div>
       </div>
     </section>
-
-    <!---------------------- SECTION TESTIMONIALS -------------------------->
-    <!-- <section class="section-testimonial">
-      <h3 class="text-center">Over 150 Clients Chose Us</h3>
-      <div class="item-rating ms-3 my-3">
-        <div class="thumb">
-          <ul id="images">
-            <li>
-              <img src="images/author1.png" alt="Author" />
-            </li>
-            <li>
-              <img src="images/author2.png" alt="Author" />
-            </li>
-            <li>
-              <img src="images/author3.png" alt="Author" />
-            </li>
-            <li>
-              <img src="images/author4.png" alt="Author" />
-            </li>
-            <li>
-              <img src="images/author1.png" alt="Author" />
-            </li>
-            <li>
-              <img src="images/author2.png" alt="Author" />
-            </li>
-            <li>
-              <img src="images/author3.png" alt="Author" />
-            </li>
-            <li>
-              <img src="images/author4.png" alt="Author" />
-            </li>
-            <li>
-              <img src="images/author1.png" alt="Author" />
-            </li>
-            <li>
-              <img src="images/author2.png" alt="Author" />
-            </li>
-            <li>
-              <img src="images/author3.png" alt="Author" />
-            </li>
-            <li>
-              <img src="images/author4.png" alt="Author" />
-            </li>
-          </ul>
-        </div>
-        <div class="content d-flex justify-content-center">
-          <span class="rating-icon ratingColor">
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fal fa-star"></i>
-          </span>
-          <span class="review-text"> <span>100+</span> Reviews </span>
-        </div>
-      </div>
-    </section> -->
-
-    <!--------------------------- SECTION NEWSLETTER ---------------------->
-    <div class="container mx-auto px-5 py-5">
-      <section class="home-newsletter bordered px-5 py-5">
-        <div class="container">
-          <div class="row">
-            <div class="col-sm-12 d-flex justify-content-center">
-              <div class="single">
-                <h2 class="py-4">Subscribe to our Newsletter</h2>
-                <div class="input-group">
-                  <input
-                    type="email"
-                    class="form-control px-4"
-                    placeholder="Enter your email"
-                  />
-                  <span class="input-group-btn">
-                    <button class="btn btn-theme px-3" type="submit">
-                      <i class="fa fa-paper-plane"></i> Subscribe
-                    </button>
-                  </span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-    </div>
 
     <!---------------------- SECTION FOOTER --------------------------->
     <footer class="text-muted py-5 bg-light mt-5">

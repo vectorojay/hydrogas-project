@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="queries.css" />
     <link href="navbar-top-fixed.css" rel="stylesheet" />
     <link
       rel="canonical"
@@ -43,7 +44,7 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
-          <a class="navbar-brand" href="#"
+          <a class="navbar-brand" href="index.html"
             ><img class="logo" src="images/cropped-hydropet-logo.png" alt=""
           /></a>
           <ul class="navbar-nav me-auto mb-2 ms-5 mb-md-0 gap-4">
@@ -74,9 +75,6 @@
             <li class="nav-item">
               <a class="nav-link text-black" href="about.html">About</a>
             </li>
-            <li class="nav-item">
-              <a href="blog.html" class="nav-link text-black">Blog</a>
-            </li>
           </ul>
           <!-- <form class="d-flex" role="search">
             <input
@@ -95,14 +93,15 @@
             </button>
           </form> -->
           <div class="d-flex mt-2">
-            <button
-              class="btn btn-outline-success bg-success text-white p-1 text-nowrap ms-3 px-3"
+            <a
+              href="javascript:void(Tawk_API.toggle())"
+              class="btn btn-outline-success text-success p-1 text-nowrap ms-3 px-3"
               type="submit"
             >
               Order a Refill
-            </button>
+            </a>
             <button
-              class="button-cart btn bg-success text-white d-flex p-1 text-nowrap ms-3 px-3"
+              class="button-cart btn text-success d-flex p-1 text-nowrap ms-3 px-3"
               onclick="window.location.href='cart.html';"
             >
               <ion-icon
@@ -119,7 +118,7 @@
     </nav>
     <section class="section-shop-header">
       <div class="backdrop">
-        <div class="container col-xxl-8 px-4 py-5 w-75 mx-auto">
+        <div class="shop-header-box container col-xxl-8 px-4 py-5 mx-auto">
           <div class="align-items-center g-5 py-5">
             <div class="col-lg-6">
               <h2 class="display-5 fw-bold lh-1 mb-3 text-white">
@@ -135,1364 +134,662 @@
       </div>
     </section>
 
-    <section class="section-products">
-      <div class="container px-4 py-5 mx-auto" id="featured-3">
-        <h2 class="pb-2">Gas Cylinders</h2>
-
-        <div class="products-shadow">
-          <div class="row mx-auto w-100 justify-content-center gap-3 px-4 mb-5">
-            <div
-              class="card"
-              onclick="window.location.href='product.html';"
-              style="width: 18rem"
-            >
-              <img
-                src="images/8816656.webp"
-                class="card-img-top"
-                alt="..."
-                style="height: 100%"
-              />
-              <div class="card-body px-4 py-4">
-                <div class="product-rating py-2">
-                  <span class="icon ratingColor">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                  </span>
-                  <span class="rating-number">(64)</span>
-                </div>
-                <div class="mb-3">
-                  <h5 class="title py-2">
-                    <small class="prod-name greyish"
-                      >Orange Gas Cylinder
-                    </small>
-                  </h5>
-                  <div class="product-price-variant gap5">
-                    <span class="price current-price smallBoldF">N8500.00</span>
-                    <span class="price old-price priceLine">N12500.00</span>
-                  </div>
-                </div>
-
-                <div
-                  class="d-flex flex-row justify-content-start align-items-center gap-2 mt-1"
-                >
-                  <i class="fa fa-eye eyeicon"></i>
-
-                  <i class="fa fa-shopping-basket eyeicon darkBlue"></i>
-
-                  <i class="fa fa-heart eyeicon red"></i>
-                </div>
-              </div>
+    <section class="section-cylinders">
+      <h3>Cylinders</h3>
+      <div class="shop-cylinders-box flex-wrap">
+        <div class="best-deal" height="200px">
+          <img src="images/8829609.webp" alt="" />
+          <div class="prod-details">
+            <div class="mb-2 mt-2">
+              <span>12kg</span>
             </div>
-            <div class="card" style="width: 18rem">
-              <img
-                src="images/8829609.webp"
-                class="card-img-top"
-                alt="..."
-                style="height: 100%"
-              />
-              <div class="card-body px-4 py-4">
-                <div class="product-rating py-2">
-                  <span class="icon ratingColor">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                  </span>
-                  <span class="rating-number">(64)</span>
-                </div>
-                <div class="mb-3">
-                  <h5 class="title py-2">
-                    <small class="prod-name greyish"
-                      >Orange Gas Cylinder
-                    </small>
-                  </h5>
-                  <div class="product-price-variant gap5">
-                    <span class="price current-price smallBoldF">N8500.00</span>
-                    <span class="price old-price priceLine">N12500.00</span>
-                  </div>
-                </div>
-
-                <div
-                  class="d-flex flex-row justify-content-start align-items-center gap-2 mt-1"
-                >
-                  <i class="fa fa-eye eyeicon"></i>
-
-                  <i class="fa fa-shopping-basket eyeicon darkBlue"></i>
-
-                  <i class="fa fa-heart eyeicon red"></i>
-                </div>
-              </div>
-            </div>
-            <div class="card" style="width: 18rem">
-              <img
-                src="images/3d-rendering-gas-cylinder-removebg-preview.png"
-                class="card-img-top"
-                alt="..."
-                style="height: 100%"
-              />
-              <div class="card-body px-4 py-4">
-                <div class="product-rating py-2">
-                  <span class="icon ratingColor">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                  </span>
-                  <span class="rating-number">(64)</span>
-                </div>
-                <div class="mb-3">
-                  <h5 class="title py-2">
-                    <small class="prod-name greyish"
-                      >Orange Gas Cylinder
-                    </small>
-                  </h5>
-                  <div class="product-price-variant gap5">
-                    <span class="price current-price smallBoldF">N8500.00</span>
-                    <span class="price old-price priceLine">N12500.00</span>
-                  </div>
-                </div>
-
-                <div
-                  class="d-flex flex-row justify-content-start align-items-center gap-2 mt-1"
-                >
-                  <i class="fa fa-eye eyeicon"></i>
-
-                  <i class="fa fa-shopping-basket eyeicon darkBlue"></i>
-
-                  <i class="fa fa-heart eyeicon red"></i>
-                </div>
-              </div>
-            </div>
-            <div class="card" style="width: 18rem">
-              <img
-                src="images/8829612.webp"
-                class="card-img-top"
-                alt="..."
-                style="height: 100%"
-              />
-              <div class="card-body px-4 py-4">
-                <div class="product-rating py-2">
-                  <span class="icon ratingColor">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                  </span>
-                  <span class="rating-number">(64)</span>
-                </div>
-                <div class="mb-3">
-                  <h5 class="title py-2">
-                    <small class="prod-name greyish"
-                      >Orange Gas Cylinder
-                    </small>
-                  </h5>
-                  <div class="product-price-variant gap5">
-                    <span class="price current-price smallBoldF">N8500.00</span>
-                    <span class="price old-price priceLine">N12500.00</span>
-                  </div>
-                </div>
-
-                <div
-                  class="d-flex flex-row justify-content-start align-items-center gap-2 mt-1"
-                >
-                  <i class="fa fa-eye eyeicon"></i>
-
-                  <i class="fa fa-shopping-basket eyeicon darkBlue"></i>
-
-                  <i class="fa fa-heart eyeicon red"></i>
-                </div>
-              </div>
+            <h5>Green Cylinder Product</h5>
+            <div class="product-price-variant gap5">
+              <span class="price current-price smallBoldF">N8500.00</span>
+              <span class="price old-price priceLine">N12500.00</span>
             </div>
           </div>
-
-          <div class="row mx-auto w-100 justify-content-center gap-3 px-4">
-            <div class="card" style="width: 18rem">
-              <img
-                src="images/8829609.webp"
-                class="card-img-top"
-                alt="..."
-                style="height: 100%"
-              />
-              <div class="card-body px-4 py-4">
-                <div class="product-rating py-2">
-                  <span class="icon ratingColor">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                  </span>
-                  <span class="rating-number">(64)</span>
-                </div>
-                <div class="mb-3">
-                  <h5 class="title py-2">
-                    <small class="prod-name greyish"
-                      >Orange Gas Cylinder
-                    </small>
-                  </h5>
-                  <div class="product-price-variant gap5">
-                    <span class="price current-price smallBoldF">N8500.00</span>
-                    <span class="price old-price priceLine">N12500.00</span>
-                  </div>
-                </div>
-
-                <div
-                  class="d-flex flex-row justify-content-start align-items-center gap-2 mt-1"
-                >
-                  <i class="fa fa-eye eyeicon"></i>
-
-                  <i class="fa fa-shopping-basket eyeicon darkBlue"></i>
-
-                  <i class="fa fa-heart eyeicon red"></i>
-                </div>
-              </div>
+          <div
+            class="d-flex flex-row justify-content-start align-items-center gap-2 mt-2"
+          >
+            <button class="btn text-success border-success">
+              Add to cart
+              <i class="fa fa-shopping-cart ms-1"></i>
+            </button>
+          </div>
+        </div>
+        <div class="best-deal" height="200px">
+          <img src="images/8816656.webp" alt="" />
+          <div class="prod-details">
+            <div class="mb-2 mt-2">
+              <span>12kg</span>
             </div>
-            <div class="card" style="width: 18rem">
-              <img
-                src="images/8816656.webp"
-                class="card-img-top"
-                alt="..."
-                style="height: 100%"
-              />
-              <div class="card-body px-4 py-4">
-                <div class="product-rating py-2">
-                  <span class="icon ratingColor">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                  </span>
-                  <span class="rating-number">(64)</span>
-                </div>
-                <div class="mb-3">
-                  <h5 class="title py-2">
-                    <small class="prod-name greyish"
-                      >Orange Gas Cylinder
-                    </small>
-                  </h5>
-                  <div class="product-price-variant gap5">
-                    <span class="price current-price smallBoldF">N8500.00</span>
-                    <span class="price old-price priceLine">N12500.00</span>
-                  </div>
-                </div>
-
-                <div
-                  class="d-flex flex-row justify-content-start align-items-center gap-2 mt-1"
-                >
-                  <i class="fa fa-eye eyeicon"></i>
-
-                  <i class="fa fa-shopping-basket eyeicon darkBlue"></i>
-
-                  <i class="fa fa-heart eyeicon red"></i>
-                </div>
-              </div>
+            <h5>Green Cylinder Product</h5>
+            <div class="product-price-variant gap5">
+              <span class="price current-price smallBoldF">N8500.00</span>
+              <span class="price old-price priceLine">N12500.00</span>
             </div>
-            <div class="card" style="width: 18rem">
-              <img
-                src="images/8829612.webp"
-                class="card-img-top"
-                alt="..."
-                style="height: 100%"
-              />
-              <div class="card-body px-4 py-4">
-                <div class="product-rating py-2">
-                  <span class="icon ratingColor">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                  </span>
-                  <span class="rating-number">(64)</span>
-                </div>
-                <div class="mb-3">
-                  <h5 class="title py-2">
-                    <small class="prod-name greyish"
-                      >Orange Gas Cylinder
-                    </small>
-                  </h5>
-                  <div class="product-price-variant gap5">
-                    <span class="price current-price smallBoldF">N8500.00</span>
-                    <span class="price old-price priceLine">N12500.00</span>
-                  </div>
-                </div>
-
-                <div
-                  class="d-flex flex-row justify-content-start align-items-center gap-2 mt-1"
-                >
-                  <i class="fa fa-eye eyeicon"></i>
-
-                  <i class="fa fa-shopping-basket eyeicon darkBlue"></i>
-
-                  <i class="fa fa-heart eyeicon red"></i>
-                </div>
-              </div>
+          </div>
+          <div
+            class="d-flex flex-row justify-content-start align-items-center gap-2 mt-2"
+          >
+            <button class="btn text-success border-success">
+              Add to cart
+              <i class="fa fa-shopping-cart ms-1"></i>
+            </button>
+          </div>
+        </div>
+        <div class="best-deal" height="200px">
+          <img src="images/8829609.webp" alt="" />
+          <div class="prod-details">
+            <div class="mb-2 mt-2">
+              <span>12kg</span>
             </div>
-            <div class="card" style="width: 18rem">
-              <img
-                src="images/steel-oxygen-tanks-arrangement.webp"
-                class="card-img-top"
-                alt="..."
-                style="height: 100%"
-              />
-              <div class="card-body px-4 py-4">
-                <div class="product-rating py-2">
-                  <span class="icon ratingColor">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                  </span>
-                  <span class="rating-number">(64)</span>
-                </div>
-                <div class="mb-3">
-                  <h5 class="title py-2">
-                    <small class="prod-name greyish"
-                      >Orange Gas Cylinder
-                    </small>
-                  </h5>
-                  <div class="product-price-variant gap5">
-                    <span class="price current-price smallBoldF">N8500.00</span>
-                    <span class="price old-price priceLine">N12500.00</span>
-                  </div>
-                </div>
-
-                <div
-                  class="d-flex flex-row justify-content-start align-items-center gap-2 mt-1"
-                >
-                  <i class="fa fa-eye eyeicon"></i>
-
-                  <i class="fa fa-shopping-basket eyeicon darkBlue"></i>
-
-                  <i class="fa fa-heart eyeicon red"></i>
-                </div>
-              </div>
+            <h5>Green Cylinder Product</h5>
+            <div class="product-price-variant gap5">
+              <span class="price current-price smallBoldF">N8500.00</span>
+              <span class="price old-price priceLine">N12500.00</span>
             </div>
+          </div>
+          <div
+            class="d-flex flex-row justify-content-start align-items-center gap-2 mt-2"
+          >
+            <button class="btn text-success border-success">
+              Add to cart
+              <i class="fa fa-shopping-cart ms-1"></i>
+            </button>
+          </div>
+        </div>
+        <div class="best-deal" height="200px">
+          <img src="images/8829609.webp" alt="" />
+          <div class="prod-details">
+            <div class="mb-2 mt-2">
+              <span>12kg</span>
+            </div>
+            <h5>Green Cylinder Product</h5>
+            <div class="product-price-variant gap5">
+              <span class="price current-price smallBoldF">N8500.00</span>
+              <span class="price old-price priceLine">N12500.00</span>
+            </div>
+          </div>
+          <div
+            class="d-flex flex-row justify-content-start align-items-center gap-2 mt-2"
+          >
+            <button class="btn text-success border-success">
+              Add to cart
+              <i class="fa fa-shopping-cart ms-1"></i>
+            </button>
+          </div>
+        </div>
+        <div class="best-deal" height="200px">
+          <img src="images/8816656.webp" alt="" />
+          <div class="prod-details">
+            <div class="mb-2 mt-2">
+              <span>12kg</span>
+            </div>
+            <h5>Green Cylinder Product</h5>
+            <div class="product-price-variant gap5">
+              <span class="price current-price smallBoldF">N8500.00</span>
+              <span class="price old-price priceLine">N12500.00</span>
+            </div>
+          </div>
+          <div
+            class="d-flex flex-row justify-content-start align-items-center gap-2 mt-2"
+          >
+            <button class="btn text-success border-success">
+              Add to cart
+              <i class="fa fa-shopping-cart ms-1"></i>
+            </button>
+          </div>
+        </div>
+        <div class="best-deal" height="200px">
+          <img src="images/8816656.webp" alt="" />
+          <div class="prod-details">
+            <div class="mb-2 mt-2">
+              <span>12kg</span>
+            </div>
+            <h5>Green Cylinder Product</h5>
+            <div class="product-price-variant gap5">
+              <span class="price current-price smallBoldF">N8500.00</span>
+              <span class="price old-price priceLine">N12500.00</span>
+            </div>
+          </div>
+          <div
+            class="d-flex flex-row justify-content-start align-items-center gap-2 mt-2"
+          >
+            <button class="btn text-success border-success">
+              Add to cart
+              <i class="fa fa-shopping-cart ms-1"></i>
+            </button>
           </div>
         </div>
       </div>
-
-      <div class="container px-4 py-5 mx-auto" id="featured-3">
-        <h2 class="pb-2">Hoses</h2>
-        <div class="products-shadow">
-          <div class="row mx-auto w-100 justify-content-center gap-3 px-4 mb-5">
-            <div class="card" style="width: 18rem">
-              <img
-                src="images/8816656.webp"
-                class="card-img-top"
-                alt="..."
-                style="height: 100%"
-              />
-              <div class="card-body px-4 py-4">
-                <div class="product-rating py-2">
-                  <span class="icon ratingColor">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                  </span>
-                  <span class="rating-number">(64)</span>
-                </div>
-                <div class="mb-3">
-                  <h5 class="title py-2">
-                    <small class="prod-name greyish"
-                      >Orange Gas Cylinder
-                    </small>
-                  </h5>
-                  <div class="product-price-variant gap5">
-                    <span class="price current-price smallBoldF">N8500.00</span>
-                    <span class="price old-price priceLine">N12500.00</span>
-                  </div>
-                </div>
-
-                <div
-                  class="d-flex flex-row justify-content-start align-items-center gap-2 mt-1"
-                >
-                  <i class="fa fa-eye eyeicon"></i>
-
-                  <i class="fa fa-shopping-basket eyeicon darkBlue"></i>
-
-                  <i class="fa fa-heart eyeicon red"></i>
-                </div>
-              </div>
+      <div class="shop-cylinders-box flex-wrap mt-5">
+        <div class="best-deal" height="200px">
+          <img src="images/8829609.webp" alt="" />
+          <div class="prod-details">
+            <div class="mb-2 mt-2">
+              <span>12kg</span>
             </div>
-            <div class="card" style="width: 18rem">
-              <img
-                src="images/8829609.webp"
-                class="card-img-top"
-                alt="..."
-                style="height: 100%"
-              />
-              <div class="card-body px-4 py-4">
-                <div class="product-rating py-2">
-                  <span class="icon ratingColor">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                  </span>
-                  <span class="rating-number">(64)</span>
-                </div>
-                <div class="mb-3">
-                  <h5 class="title py-2">
-                    <small class="prod-name greyish"
-                      >Orange Gas Cylinder
-                    </small>
-                  </h5>
-                  <div class="product-price-variant gap5">
-                    <span class="price current-price smallBoldF">N8500.00</span>
-                    <span class="price old-price priceLine">N12500.00</span>
-                  </div>
-                </div>
-
-                <div
-                  class="d-flex flex-row justify-content-start align-items-center gap-2 mt-1"
-                >
-                  <i class="fa fa-eye eyeicon"></i>
-
-                  <i class="fa fa-shopping-basket eyeicon darkBlue"></i>
-
-                  <i class="fa fa-heart eyeicon red"></i>
-                </div>
-              </div>
-            </div>
-            <div class="card" style="width: 18rem">
-              <img
-                src="images/3d-rendering-gas-cylinder-removebg-preview.png"
-                class="card-img-top"
-                alt="..."
-                style="height: 100%"
-              />
-              <div class="card-body px-4 py-4">
-                <div class="product-rating py-2">
-                  <span class="icon ratingColor">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                  </span>
-                  <span class="rating-number">(64)</span>
-                </div>
-                <div class="mb-3">
-                  <h5 class="title py-2">
-                    <small class="prod-name greyish"
-                      >Orange Gas Cylinder
-                    </small>
-                  </h5>
-                  <div class="product-price-variant gap5">
-                    <span class="price current-price smallBoldF">N8500.00</span>
-                    <span class="price old-price priceLine">N12500.00</span>
-                  </div>
-                </div>
-
-                <div
-                  class="d-flex flex-row justify-content-start align-items-center gap-2 mt-1"
-                >
-                  <i class="fa fa-eye eyeicon"></i>
-
-                  <i class="fa fa-shopping-basket eyeicon darkBlue"></i>
-
-                  <i class="fa fa-heart eyeicon red"></i>
-                </div>
-              </div>
-            </div>
-            <div class="card" style="width: 18rem">
-              <img
-                src="images/8829612.webp"
-                class="card-img-top"
-                alt="..."
-                style="height: 100%"
-              />
-              <div class="card-body px-4 py-4">
-                <div class="product-rating py-2">
-                  <span class="icon ratingColor">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                  </span>
-                  <span class="rating-number">(64)</span>
-                </div>
-                <div class="mb-3">
-                  <h5 class="title py-2">
-                    <small class="prod-name greyish"
-                      >Orange Gas Cylinder
-                    </small>
-                  </h5>
-                  <div class="product-price-variant gap5">
-                    <span class="price current-price smallBoldF">N8500.00</span>
-                    <span class="price old-price priceLine">N12500.00</span>
-                  </div>
-                </div>
-
-                <div
-                  class="d-flex flex-row justify-content-start align-items-center gap-2 mt-1"
-                >
-                  <i class="fa fa-eye eyeicon"></i>
-
-                  <i class="fa fa-shopping-basket eyeicon darkBlue"></i>
-
-                  <i class="fa fa-heart eyeicon red"></i>
-                </div>
-              </div>
+            <h5>Green Cylinder Product</h5>
+            <div class="product-price-variant gap5">
+              <span class="price current-price smallBoldF">N8500.00</span>
+              <span class="price old-price priceLine">N12500.00</span>
             </div>
           </div>
-
-          <div class="row mx-auto w-100 justify-content-center gap-3 px-4">
-            <div class="card" style="width: 18rem">
-              <img
-                src="images/8829609.webp"
-                class="card-img-top"
-                alt="..."
-                style="height: 100%"
-              />
-              <div class="card-body px-4 py-4">
-                <div class="product-rating py-2">
-                  <span class="icon ratingColor">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                  </span>
-                  <span class="rating-number">(64)</span>
-                </div>
-                <div class="mb-3">
-                  <h5 class="title py-2">
-                    <small class="prod-name greyish"
-                      >Orange Gas Cylinder
-                    </small>
-                  </h5>
-                  <div class="product-price-variant gap5">
-                    <span class="price current-price smallBoldF">N8500.00</span>
-                    <span class="price old-price priceLine">N12500.00</span>
-                  </div>
-                </div>
-
-                <div
-                  class="d-flex flex-row justify-content-start align-items-center gap-2 mt-1"
-                >
-                  <i class="fa fa-eye eyeicon"></i>
-
-                  <i class="fa fa-shopping-basket eyeicon darkBlue"></i>
-
-                  <i class="fa fa-heart eyeicon red"></i>
-                </div>
-              </div>
+          <div
+            class="d-flex flex-row justify-content-start align-items-center gap-2 mt-2"
+          >
+            <button class="btn text-success border-success">
+              Add to cart
+              <i class="fa fa-shopping-cart ms-1"></i>
+            </button>
+          </div>
+        </div>
+        <div class="best-deal" height="200px">
+          <img src="images/8816656.webp" alt="" />
+          <div class="prod-details">
+            <div class="mb-2 mt-2">
+              <span>12kg</span>
             </div>
-            <div class="card" style="width: 18rem">
-              <img
-                src="images/8816656.webp"
-                class="card-img-top"
-                alt="..."
-                style="height: 100%"
-              />
-              <div class="card-body px-4 py-4">
-                <div class="product-rating py-2">
-                  <span class="icon ratingColor">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                  </span>
-                  <span class="rating-number">(64)</span>
-                </div>
-                <div class="mb-3">
-                  <h5 class="title py-2">
-                    <small class="prod-name greyish"
-                      >Orange Gas Cylinder
-                    </small>
-                  </h5>
-                  <div class="product-price-variant gap5">
-                    <span class="price current-price smallBoldF">N8500.00</span>
-                    <span class="price old-price priceLine">N12500.00</span>
-                  </div>
-                </div>
-
-                <div
-                  class="d-flex flex-row justify-content-start align-items-center gap-2 mt-1"
-                >
-                  <i class="fa fa-eye eyeicon"></i>
-
-                  <i class="fa fa-shopping-basket eyeicon darkBlue"></i>
-
-                  <i class="fa fa-heart eyeicon red"></i>
-                </div>
-              </div>
+            <h5>Green Cylinder Product</h5>
+            <div class="product-price-variant gap5">
+              <span class="price current-price smallBoldF">N8500.00</span>
+              <span class="price old-price priceLine">N12500.00</span>
             </div>
-            <div class="card" style="width: 18rem">
-              <img
-                src="images/8829612.webp"
-                class="card-img-top"
-                alt="..."
-                style="height: 100%"
-              />
-              <div class="card-body px-4 py-4">
-                <div class="product-rating py-2">
-                  <span class="icon ratingColor">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                  </span>
-                  <span class="rating-number">(64)</span>
-                </div>
-                <div class="mb-3">
-                  <h5 class="title py-2">
-                    <small class="prod-name greyish"
-                      >Orange Gas Cylinder
-                    </small>
-                  </h5>
-                  <div class="product-price-variant gap5">
-                    <span class="price current-price smallBoldF">N8500.00</span>
-                    <span class="price old-price priceLine">N12500.00</span>
-                  </div>
-                </div>
-
-                <div
-                  class="d-flex flex-row justify-content-start align-items-center gap-2 mt-1"
-                >
-                  <i class="fa fa-eye eyeicon"></i>
-
-                  <i class="fa fa-shopping-basket eyeicon darkBlue"></i>
-
-                  <i class="fa fa-heart eyeicon red"></i>
-                </div>
-              </div>
+          </div>
+          <div
+            class="d-flex flex-row justify-content-start align-items-center gap-2 mt-2"
+          >
+            <button class="btn text-success border-success">
+              Add to cart
+              <i class="fa fa-shopping-cart ms-1"></i>
+            </button>
+          </div>
+        </div>
+        <div class="best-deal" height="200px">
+          <img src="images/8829609.webp" alt="" />
+          <div class="prod-details">
+            <div class="mb-2 mt-2">
+              <span>12kg</span>
             </div>
-            <div class="card" style="width: 18rem">
-              <img
-                src="images/steel-oxygen-tanks-arrangement.webp"
-                class="card-img-top"
-                alt="..."
-                style="height: 100%"
-              />
-              <div class="card-body px-4 py-4">
-                <div class="product-rating py-2">
-                  <span class="icon ratingColor">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                  </span>
-                  <span class="rating-number">(64)</span>
-                </div>
-                <div class="mb-3">
-                  <h5 class="title py-2">
-                    <small class="prod-name greyish"
-                      >Orange Gas Cylinder
-                    </small>
-                  </h5>
-                  <div class="product-price-variant gap5">
-                    <span class="price current-price smallBoldF">N8500.00</span>
-                    <span class="price old-price priceLine">N12500.00</span>
-                  </div>
-                </div>
-
-                <div
-                  class="d-flex flex-row justify-content-start align-items-center gap-2 mt-1"
-                >
-                  <i class="fa fa-eye eyeicon"></i>
-
-                  <i class="fa fa-shopping-basket eyeicon darkBlue"></i>
-
-                  <i class="fa fa-heart eyeicon red"></i>
-                </div>
-              </div>
+            <h5>Green Cylinder Product</h5>
+            <div class="product-price-variant gap5">
+              <span class="price current-price smallBoldF">N8500.00</span>
+              <span class="price old-price priceLine">N12500.00</span>
             </div>
+          </div>
+          <div
+            class="d-flex flex-row justify-content-start align-items-center gap-2 mt-2"
+          >
+            <button class="btn text-success border-success">
+              Add to cart
+              <i class="fa fa-shopping-cart ms-1"></i>
+            </button>
+          </div>
+        </div>
+        <div class="best-deal" height="200px">
+          <img src="images/8829609.webp" alt="" />
+          <div class="prod-details">
+            <div class="mb-2 mt-2">
+              <span>12kg</span>
+            </div>
+            <h5>Green Cylinder Product</h5>
+            <div class="product-price-variant gap5">
+              <span class="price current-price smallBoldF">N8500.00</span>
+              <span class="price old-price priceLine">N12500.00</span>
+            </div>
+          </div>
+          <div
+            class="d-flex flex-row justify-content-start align-items-center gap-2 mt-2"
+          >
+            <button class="btn text-success border-success">
+              Add to cart
+              <i class="fa fa-shopping-cart ms-1"></i>
+            </button>
+          </div>
+        </div>
+        <div class="best-deal" height="200px">
+          <img src="images/8816656.webp" alt="" />
+          <div class="prod-details">
+            <div class="mb-2 mt-2">
+              <span>12kg</span>
+            </div>
+            <h5>Green Cylinder Product</h5>
+            <div class="product-price-variant gap5">
+              <span class="price current-price smallBoldF">N8500.00</span>
+              <span class="price old-price priceLine">N12500.00</span>
+            </div>
+          </div>
+          <div
+            class="d-flex flex-row justify-content-start align-items-center gap-2 mt-2"
+          >
+            <button class="btn text-success border-success">
+              Add to cart
+              <i class="fa fa-shopping-cart ms-1"></i>
+            </button>
+          </div>
+        </div>
+        <div class="best-deal" height="200px">
+          <img src="images/8816656.webp" alt="" />
+          <div class="prod-details">
+            <div class="mb-2 mt-2">
+              <span>12kg</span>
+            </div>
+            <h5>Green Cylinder Product</h5>
+            <div class="product-price-variant gap5">
+              <span class="price current-price smallBoldF">N8500.00</span>
+              <span class="price old-price priceLine">N12500.00</span>
+            </div>
+          </div>
+          <div
+            class="d-flex flex-row justify-content-start align-items-center gap-2 mt-2"
+          >
+            <button class="btn text-success border-success">
+              Add to cart
+              <i class="fa fa-shopping-cart ms-1"></i>
+            </button>
           </div>
         </div>
       </div>
+      <div class="d-flex align-items-center justify-content-center py-5 mt-5">
+        <nav aria-label="Standard pagination example">
+          <ul class="pagination">
+            <li class="page-item">
+              <a class="page-link" href="#" aria-label="Previous">
+                <span aria-hidden="true">&laquo;</span>
+              </a>
+            </li>
+            <li class="page-item">
+              <a class="page-link text-success" href="#">1</a>
+            </li>
+            <li class="page-item">
+              <a class="page-link text-success" href="#">2</a>
+            </li>
+            <li class="page-item">
+              <a class="page-link text-success" href="#">3</a>
+            </li>
+            <li class="page-item">
+              <a class="page-link" href="#" aria-label="Next">
+                <span aria-hidden="true">&raquo;</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </section>
 
-      <div class="container px-4 py-5 mx-auto" id="featured-3">
-        <h2 class="pb-2">Burners</h2>
-        <div class="products-shadow">
-          <div class="row mx-auto w-100 justify-content-center gap-3 px-4 mb-5">
-            <div class="card" style="width: 18rem">
-              <img
-                src="images/8816656.webp"
-                class="card-img-top"
-                alt="..."
-                style="height: 100%"
-              />
-              <div class="card-body px-4 py-4">
-                <div class="product-rating py-2">
-                  <span class="icon ratingColor">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                  </span>
-                  <span class="rating-number">(64)</span>
-                </div>
-                <div class="mb-3">
-                  <h5 class="title py-2">
-                    <small class="prod-name greyish"
-                      >Orange Gas Cylinder
-                    </small>
-                  </h5>
-                  <div class="product-price-variant gap5">
-                    <span class="price current-price smallBoldF">N8500.00</span>
-                    <span class="price old-price priceLine">N12500.00</span>
-                  </div>
-                </div>
-
-                <div
-                  class="d-flex flex-row justify-content-start align-items-center gap-2 mt-1"
-                >
-                  <i class="fa fa-eye eyeicon"></i>
-
-                  <i class="fa fa-shopping-basket eyeicon darkBlue"></i>
-
-                  <i class="fa fa-heart eyeicon red"></i>
-                </div>
-              </div>
+    <section class="section-accessories">
+      <h3>Accessories</h3>
+      <div class="shop-accessories-box flex-wrap">
+        <div class="best-deal" height="200px">
+          <img src="images/8829609.webp" alt="" />
+          <div class="prod-details">
+            <div class="mb-2 mt-2">
+              <span>12kg</span>
             </div>
-            <div class="card" style="width: 18rem">
-              <img
-                src="images/8829609.webp"
-                class="card-img-top"
-                alt="..."
-                style="height: 100%"
-              />
-              <div class="card-body px-4 py-4">
-                <div class="product-rating py-2">
-                  <span class="icon ratingColor">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                  </span>
-                  <span class="rating-number">(64)</span>
-                </div>
-                <div class="mb-3">
-                  <h5 class="title py-2">
-                    <small class="prod-name greyish"
-                      >Orange Gas Cylinder
-                    </small>
-                  </h5>
-                  <div class="product-price-variant gap5">
-                    <span class="price current-price smallBoldF">N8500.00</span>
-                    <span class="price old-price priceLine">N12500.00</span>
-                  </div>
-                </div>
-
-                <div
-                  class="d-flex flex-row justify-content-start align-items-center gap-2 mt-1"
-                >
-                  <i class="fa fa-eye eyeicon"></i>
-
-                  <i class="fa fa-shopping-basket eyeicon darkBlue"></i>
-
-                  <i class="fa fa-heart eyeicon red"></i>
-                </div>
-              </div>
-            </div>
-            <div class="card" style="width: 18rem">
-              <img
-                src="images/3d-rendering-gas-cylinder-removebg-preview.png"
-                class="card-img-top"
-                alt="..."
-                style="height: 100%"
-              />
-              <div class="card-body px-4 py-4">
-                <div class="product-rating py-2">
-                  <span class="icon ratingColor">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                  </span>
-                  <span class="rating-number">(64)</span>
-                </div>
-                <div class="mb-3">
-                  <h5 class="title py-2">
-                    <small class="prod-name greyish"
-                      >Orange Gas Cylinder
-                    </small>
-                  </h5>
-                  <div class="product-price-variant gap5">
-                    <span class="price current-price smallBoldF">N8500.00</span>
-                    <span class="price old-price priceLine">N12500.00</span>
-                  </div>
-                </div>
-
-                <div
-                  class="d-flex flex-row justify-content-start align-items-center gap-2 mt-1"
-                >
-                  <i class="fa fa-eye eyeicon"></i>
-
-                  <i class="fa fa-shopping-basket eyeicon darkBlue"></i>
-
-                  <i class="fa fa-heart eyeicon red"></i>
-                </div>
-              </div>
-            </div>
-            <div class="card" style="width: 18rem">
-              <img
-                src="images/8829612.webp"
-                class="card-img-top"
-                alt="..."
-                style="height: 100%"
-              />
-              <div class="card-body px-4 py-4">
-                <div class="product-rating py-2">
-                  <span class="icon ratingColor">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                  </span>
-                  <span class="rating-number">(64)</span>
-                </div>
-                <div class="mb-3">
-                  <h5 class="title py-2">
-                    <small class="prod-name greyish"
-                      >Orange Gas Cylinder
-                    </small>
-                  </h5>
-                  <div class="product-price-variant gap5">
-                    <span class="price current-price smallBoldF">N8500.00</span>
-                    <span class="price old-price priceLine">N12500.00</span>
-                  </div>
-                </div>
-
-                <div
-                  class="d-flex flex-row justify-content-start align-items-center gap-2 mt-1"
-                >
-                  <i class="fa fa-eye eyeicon"></i>
-
-                  <i class="fa fa-shopping-basket eyeicon darkBlue"></i>
-
-                  <i class="fa fa-heart eyeicon red"></i>
-                </div>
-              </div>
+            <h5>Green Cylinder Product</h5>
+            <div class="product-price-variant gap5">
+              <span class="price current-price smallBoldF">N8500.00</span>
+              <span class="price old-price priceLine">N12500.00</span>
             </div>
           </div>
-
-          <div class="row mx-auto w-100 justify-content-center gap-3 px-4">
-            <div class="card" style="width: 18rem">
-              <img
-                src="images/8829609.webp"
-                class="card-img-top"
-                alt="..."
-                style="height: 100%"
-              />
-              <div class="card-body px-4 py-4">
-                <div class="product-rating py-2">
-                  <span class="icon ratingColor">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                  </span>
-                  <span class="rating-number">(64)</span>
-                </div>
-                <div class="mb-3">
-                  <h5 class="title py-2">
-                    <small class="prod-name greyish"
-                      >Orange Gas Cylinder
-                    </small>
-                  </h5>
-                  <div class="product-price-variant gap5">
-                    <span class="price current-price smallBoldF">N8500.00</span>
-                    <span class="price old-price priceLine">N12500.00</span>
-                  </div>
-                </div>
-
-                <div
-                  class="d-flex flex-row justify-content-start align-items-center gap-2 mt-1"
-                >
-                  <i class="fa fa-eye eyeicon"></i>
-
-                  <i class="fa fa-shopping-basket eyeicon darkBlue"></i>
-
-                  <i class="fa fa-heart eyeicon red"></i>
-                </div>
-              </div>
+          <div
+            class="d-flex flex-row justify-content-start align-items-center gap-2 mt-2"
+          >
+            <button class="btn text-success border-success">
+              Add to cart
+              <i class="fa fa-shopping-cart ms-1"></i>
+            </button>
+          </div>
+        </div>
+        <div class="best-deal" height="200px">
+          <img src="images/8816656.webp" alt="" />
+          <div class="prod-details">
+            <div class="mb-2 mt-2">
+              <span>12kg</span>
             </div>
-            <div class="card" style="width: 18rem">
-              <img
-                src="images/8816656.webp"
-                class="card-img-top"
-                alt="..."
-                style="height: 100%"
-              />
-              <div class="card-body px-4 py-4">
-                <div class="product-rating py-2">
-                  <span class="icon ratingColor">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                  </span>
-                  <span class="rating-number">(64)</span>
-                </div>
-                <div class="mb-3">
-                  <h5 class="title py-2">
-                    <small class="prod-name greyish"
-                      >Orange Gas Cylinder
-                    </small>
-                  </h5>
-                  <div class="product-price-variant gap5">
-                    <span class="price current-price smallBoldF">N8500.00</span>
-                    <span class="price old-price priceLine">N12500.00</span>
-                  </div>
-                </div>
-
-                <div
-                  class="d-flex flex-row justify-content-start align-items-center gap-2 mt-1"
-                >
-                  <i class="fa fa-eye eyeicon"></i>
-
-                  <i class="fa fa-shopping-basket eyeicon darkBlue"></i>
-
-                  <i class="fa fa-heart eyeicon red"></i>
-                </div>
-              </div>
+            <h5>Green Cylinder Product</h5>
+            <div class="product-price-variant gap5">
+              <span class="price current-price smallBoldF">N8500.00</span>
+              <span class="price old-price priceLine">N12500.00</span>
             </div>
-            <div class="card" style="width: 18rem">
-              <img
-                src="images/8829612.webp"
-                class="card-img-top"
-                alt="..."
-                style="height: 100%"
-              />
-              <div class="card-body px-4 py-4">
-                <div class="product-rating py-2">
-                  <span class="icon ratingColor">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                  </span>
-                  <span class="rating-number">(64)</span>
-                </div>
-                <div class="mb-3">
-                  <h5 class="title py-2">
-                    <small class="prod-name greyish"
-                      >Orange Gas Cylinder
-                    </small>
-                  </h5>
-                  <div class="product-price-variant gap5">
-                    <span class="price current-price smallBoldF">N8500.00</span>
-                    <span class="price old-price priceLine">N12500.00</span>
-                  </div>
-                </div>
-
-                <div
-                  class="d-flex flex-row justify-content-start align-items-center gap-2 mt-1"
-                >
-                  <i class="fa fa-eye eyeicon"></i>
-
-                  <i class="fa fa-shopping-basket eyeicon darkBlue"></i>
-
-                  <i class="fa fa-heart eyeicon red"></i>
-                </div>
-              </div>
+          </div>
+          <div
+            class="d-flex flex-row justify-content-start align-items-center gap-2 mt-2"
+          >
+            <button class="btn text-success border-success">
+              Add to cart
+              <i class="fa fa-shopping-cart ms-1"></i>
+            </button>
+          </div>
+        </div>
+        <div class="best-deal" height="200px">
+          <img src="images/8829609.webp" alt="" />
+          <div class="prod-details">
+            <div class="mb-2 mt-2">
+              <span>12kg</span>
             </div>
-            <div class="card" style="width: 18rem">
-              <img
-                src="images/steel-oxygen-tanks-arrangement.webp"
-                class="card-img-top"
-                alt="..."
-                style="height: 100%"
-              />
-              <div class="card-body px-4 py-4">
-                <div class="product-rating py-2">
-                  <span class="icon ratingColor">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                  </span>
-                  <span class="rating-number">(64)</span>
-                </div>
-                <div class="mb-3">
-                  <h5 class="title py-2">
-                    <small class="prod-name greyish"
-                      >Orange Gas Cylinder
-                    </small>
-                  </h5>
-                  <div class="product-price-variant gap5">
-                    <span class="price current-price smallBoldF">N8500.00</span>
-                    <span class="price old-price priceLine">N12500.00</span>
-                  </div>
-                </div>
-
-                <div
-                  class="d-flex flex-row justify-content-start align-items-center gap-2 mt-1"
-                >
-                  <i class="fa fa-eye eyeicon"></i>
-
-                  <i class="fa fa-shopping-basket eyeicon darkBlue"></i>
-
-                  <i class="fa fa-heart eyeicon red"></i>
-                </div>
-              </div>
+            <h5>Green Cylinder Product</h5>
+            <div class="product-price-variant gap5">
+              <span class="price current-price smallBoldF">N8500.00</span>
+              <span class="price old-price priceLine">N12500.00</span>
             </div>
+          </div>
+          <div
+            class="d-flex flex-row justify-content-start align-items-center gap-2 mt-2"
+          >
+            <button class="btn text-success border-success">
+              Add to cart
+              <i class="fa fa-shopping-cart ms-1"></i>
+            </button>
+          </div>
+        </div>
+        <div class="best-deal" height="200px">
+          <img src="images/8829609.webp" alt="" />
+          <div class="prod-details">
+            <div class="mb-2 mt-2">
+              <span>12kg</span>
+            </div>
+            <h5>Green Cylinder Product</h5>
+            <div class="product-price-variant gap5">
+              <span class="price current-price smallBoldF">N8500.00</span>
+              <span class="price old-price priceLine">N12500.00</span>
+            </div>
+          </div>
+          <div
+            class="d-flex flex-row justify-content-start align-items-center gap-2 mt-2"
+          >
+            <button class="btn text-success border-success">
+              Add to cart
+              <i class="fa fa-shopping-cart ms-1"></i>
+            </button>
+          </div>
+        </div>
+        <div class="best-deal" height="200px">
+          <img src="images/8816656.webp" alt="" />
+          <div class="prod-details">
+            <div class="mb-2 mt-2">
+              <span>12kg</span>
+            </div>
+            <h5>Green Cylinder Product</h5>
+            <div class="product-price-variant gap5">
+              <span class="price current-price smallBoldF">N8500.00</span>
+              <span class="price old-price priceLine">N12500.00</span>
+            </div>
+          </div>
+          <div
+            class="d-flex flex-row justify-content-start align-items-center gap-2 mt-2"
+          >
+            <button class="btn text-success border-success">
+              Add to cart
+              <i class="fa fa-shopping-cart ms-1"></i>
+            </button>
+          </div>
+        </div>
+        <div class="best-deal" height="200px">
+          <img src="images/8816656.webp" alt="" />
+          <div class="prod-details">
+            <div class="mb-2 mt-2">
+              <span>12kg</span>
+            </div>
+            <h5>Green Cylinder Product</h5>
+            <div class="product-price-variant gap5">
+              <span class="price current-price smallBoldF">N8500.00</span>
+              <span class="price old-price priceLine">N12500.00</span>
+            </div>
+          </div>
+          <div
+            class="d-flex flex-row justify-content-start align-items-center gap-2 mt-2"
+          >
+            <button class="btn text-success border-success">
+              Add to cart
+              <i class="fa fa-shopping-cart ms-1"></i>
+            </button>
           </div>
         </div>
       </div>
-
-      <div class="container px-4 py-5 mx-auto" id="featured-3">
-        <h2 class="pb-2">Accessories</h2>
-        <div class="products-shadow">
-          <div class="row mx-auto w-100 justify-content-center gap-3 px-4 mb-5">
-            <div class="card" style="width: 18rem">
-              <img
-                src="images/8816656.webp"
-                class="card-img-top"
-                alt="..."
-                style="height: 100%"
-              />
-              <div class="card-body px-4 py-4">
-                <div class="product-rating py-2">
-                  <span class="icon ratingColor">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                  </span>
-                  <span class="rating-number">(64)</span>
-                </div>
-                <div class="mb-3">
-                  <h5 class="title py-2">
-                    <small class="prod-name greyish"
-                      >Orange Gas Cylinder
-                    </small>
-                  </h5>
-                  <div class="product-price-variant gap5">
-                    <span class="price current-price smallBoldF">N8500.00</span>
-                    <span class="price old-price priceLine">N12500.00</span>
-                  </div>
-                </div>
-
-                <div
-                  class="d-flex flex-row justify-content-start align-items-center gap-2 mt-1"
-                >
-                  <i class="fa fa-eye eyeicon"></i>
-
-                  <i class="fa fa-shopping-basket eyeicon darkBlue"></i>
-
-                  <i class="fa fa-heart eyeicon red"></i>
-                </div>
-              </div>
+      <div class="shop-accessories-box flex-wrap mt-5">
+        <div class="best-deal" height="200px">
+          <img src="images/8829609.webp" alt="" />
+          <div class="prod-details">
+            <div class="mb-2 mt-2">
+              <span>12kg</span>
             </div>
-            <div class="card" style="width: 18rem">
-              <img
-                src="images/8829609.webp"
-                class="card-img-top"
-                alt="..."
-                style="height: 100%"
-              />
-              <div class="card-body px-4 py-4">
-                <div class="product-rating py-2">
-                  <span class="icon ratingColor">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                  </span>
-                  <span class="rating-number">(64)</span>
-                </div>
-                <div class="mb-3">
-                  <h5 class="title py-2">
-                    <small class="prod-name greyish"
-                      >Orange Gas Cylinder
-                    </small>
-                  </h5>
-                  <div class="product-price-variant gap5">
-                    <span class="price current-price smallBoldF">N8500.00</span>
-                    <span class="price old-price priceLine">N12500.00</span>
-                  </div>
-                </div>
-
-                <div
-                  class="d-flex flex-row justify-content-start align-items-center gap-2 mt-1"
-                >
-                  <i class="fa fa-eye eyeicon"></i>
-
-                  <i class="fa fa-shopping-basket eyeicon darkBlue"></i>
-
-                  <i class="fa fa-heart eyeicon red"></i>
-                </div>
-              </div>
-            </div>
-            <div class="card" style="width: 18rem">
-              <img
-                src="images/3d-rendering-gas-cylinder-removebg-preview.png"
-                class="card-img-top"
-                alt="..."
-                style="height: 100%"
-              />
-              <div class="card-body px-4 py-4">
-                <div class="product-rating py-2">
-                  <span class="icon ratingColor">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                  </span>
-                  <span class="rating-number">(64)</span>
-                </div>
-                <div class="mb-3">
-                  <h5 class="title py-2">
-                    <small class="prod-name greyish"
-                      >Orange Gas Cylinder
-                    </small>
-                  </h5>
-                  <div class="product-price-variant gap5">
-                    <span class="price current-price smallBoldF">N8500.00</span>
-                    <span class="price old-price priceLine">N12500.00</span>
-                  </div>
-                </div>
-
-                <div
-                  class="d-flex flex-row justify-content-start align-items-center gap-2 mt-1"
-                >
-                  <i class="fa fa-eye eyeicon"></i>
-
-                  <i class="fa fa-shopping-basket eyeicon darkBlue"></i>
-
-                  <i class="fa fa-heart eyeicon red"></i>
-                </div>
-              </div>
-            </div>
-            <div class="card" style="width: 18rem">
-              <img
-                src="images/8829612.webp"
-                class="card-img-top"
-                alt="..."
-                style="height: 100%"
-              />
-              <div class="card-body px-4 py-4">
-                <div class="product-rating py-2">
-                  <span class="icon ratingColor">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                  </span>
-                  <span class="rating-number">(64)</span>
-                </div>
-                <div class="mb-3">
-                  <h5 class="title py-2">
-                    <small class="prod-name greyish"
-                      >Orange Gas Cylinder
-                    </small>
-                  </h5>
-                  <div class="product-price-variant gap5">
-                    <span class="price current-price smallBoldF">N8500.00</span>
-                    <span class="price old-price priceLine">N12500.00</span>
-                  </div>
-                </div>
-
-                <div
-                  class="d-flex flex-row justify-content-start align-items-center gap-2 mt-1"
-                >
-                  <i class="fa fa-eye eyeicon"></i>
-
-                  <i class="fa fa-shopping-basket eyeicon darkBlue"></i>
-
-                  <i class="fa fa-heart eyeicon red"></i>
-                </div>
-              </div>
+            <h5>Green Cylinder Product</h5>
+            <div class="product-price-variant gap5">
+              <span class="price current-price smallBoldF">N8500.00</span>
+              <span class="price old-price priceLine">N12500.00</span>
             </div>
           </div>
-
-          <div class="row mx-auto w-100 justify-content-center gap-3 px-4">
-            <div class="card" style="width: 18rem">
-              <img
-                src="images/8829609.webp"
-                class="card-img-top"
-                alt="..."
-                style="height: 100%"
-              />
-              <div class="card-body px-4 py-4">
-                <div class="product-rating py-2">
-                  <span class="icon ratingColor">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                  </span>
-                  <span class="rating-number">(64)</span>
-                </div>
-                <div class="mb-3">
-                  <h5 class="title py-2">
-                    <small class="prod-name greyish"
-                      >Orange Gas Cylinder
-                    </small>
-                  </h5>
-                  <div class="product-price-variant gap5">
-                    <span class="price current-price smallBoldF">N8500.00</span>
-                    <span class="price old-price priceLine">N12500.00</span>
-                  </div>
-                </div>
-
-                <div
-                  class="d-flex flex-row justify-content-start align-items-center gap-2 mt-1"
-                >
-                  <i class="fa fa-eye eyeicon"></i>
-
-                  <i class="fa fa-shopping-basket eyeicon darkBlue"></i>
-
-                  <i class="fa fa-heart eyeicon red"></i>
-                </div>
-              </div>
+          <div
+            class="d-flex flex-row justify-content-start align-items-center gap-2 mt-2"
+          >
+            <button class="btn text-success border-success">
+              Add to cart
+              <i class="fa fa-shopping-cart ms-1"></i>
+            </button>
+          </div>
+        </div>
+        <div class="best-deal" height="200px">
+          <img src="images/8816656.webp" alt="" />
+          <div class="prod-details">
+            <div class="mb-2 mt-2">
+              <span>12kg</span>
             </div>
-            <div class="card" style="width: 18rem">
-              <img
-                src="images/8816656.webp"
-                class="card-img-top"
-                alt="..."
-                style="height: 100%"
-              />
-              <div class="card-body px-4 py-4">
-                <div class="product-rating py-2">
-                  <span class="icon ratingColor">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                  </span>
-                  <span class="rating-number">(64)</span>
-                </div>
-                <div class="mb-3">
-                  <h5 class="title py-2">
-                    <small class="prod-name greyish"
-                      >Orange Gas Cylinder
-                    </small>
-                  </h5>
-                  <div class="product-price-variant gap5">
-                    <span class="price current-price smallBoldF">N8500.00</span>
-                    <span class="price old-price priceLine">N12500.00</span>
-                  </div>
-                </div>
-
-                <div
-                  class="d-flex flex-row justify-content-start align-items-center gap-2 mt-1"
-                >
-                  <i class="fa fa-eye eyeicon"></i>
-
-                  <i class="fa fa-shopping-basket eyeicon darkBlue"></i>
-
-                  <i class="fa fa-heart eyeicon red"></i>
-                </div>
-              </div>
+            <h5>Green Cylinder Product</h5>
+            <div class="product-price-variant gap5">
+              <span class="price current-price smallBoldF">N8500.00</span>
+              <span class="price old-price priceLine">N12500.00</span>
             </div>
-            <div class="card" style="width: 18rem">
-              <img
-                src="images/8829612.webp"
-                class="card-img-top"
-                alt="..."
-                style="height: 100%"
-              />
-              <div class="card-body px-4 py-4">
-                <div class="product-rating py-2">
-                  <span class="icon ratingColor">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                  </span>
-                  <span class="rating-number">(64)</span>
-                </div>
-                <div class="mb-3">
-                  <h5 class="title py-2">
-                    <small class="prod-name greyish"
-                      >Orange Gas Cylinder
-                    </small>
-                  </h5>
-                  <div class="product-price-variant gap5">
-                    <span class="price current-price smallBoldF">N8500.00</span>
-                    <span class="price old-price priceLine">N12500.00</span>
-                  </div>
-                </div>
-
-                <div
-                  class="d-flex flex-row justify-content-start align-items-center gap-2 mt-1"
-                >
-                  <i class="fa fa-eye eyeicon"></i>
-
-                  <i class="fa fa-shopping-basket eyeicon darkBlue"></i>
-
-                  <i class="fa fa-heart eyeicon red"></i>
-                </div>
-              </div>
+          </div>
+          <div
+            class="d-flex flex-row justify-content-start align-items-center gap-2 mt-2"
+          >
+            <button class="btn text-success border-success">
+              Add to cart
+              <i class="fa fa-shopping-cart ms-1"></i>
+            </button>
+          </div>
+        </div>
+        <div class="best-deal" height="200px">
+          <img src="images/8829609.webp" alt="" />
+          <div class="prod-details">
+            <div class="mb-2 mt-2">
+              <span>12kg</span>
             </div>
-            <div class="card" style="width: 18rem">
-              <img
-                src="images/steel-oxygen-tanks-arrangement.webp"
-                class="card-img-top"
-                alt="..."
-                style="height: 100%"
-              />
-              <div class="card-body px-4 py-4">
-                <div class="product-rating py-2">
-                  <span class="icon ratingColor">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                  </span>
-                  <span class="rating-number">(64)</span>
-                </div>
-                <div class="mb-3">
-                  <h5 class="title py-2">
-                    <small class="prod-name greyish"
-                      >Orange Gas Cylinder
-                    </small>
-                  </h5>
-                  <div class="product-price-variant gap5">
-                    <span class="price current-price smallBoldF">N8500.00</span>
-                    <span class="price old-price priceLine">N12500.00</span>
-                  </div>
-                </div>
-
-                <div
-                  class="d-flex flex-row justify-content-start align-items-center gap-2 mt-1"
-                >
-                  <i class="fa fa-eye eyeicon"></i>
-
-                  <i class="fa fa-shopping-basket eyeicon darkBlue"></i>
-
-                  <i class="fa fa-heart eyeicon red"></i>
-                </div>
-              </div>
+            <h5>Green Cylinder Product</h5>
+            <div class="product-price-variant gap5">
+              <span class="price current-price smallBoldF">N8500.00</span>
+              <span class="price old-price priceLine">N12500.00</span>
             </div>
+          </div>
+          <div
+            class="d-flex flex-row justify-content-start align-items-center gap-2 mt-2"
+          >
+            <button class="btn text-success border-success">
+              Add to cart
+              <i class="fa fa-shopping-cart ms-1"></i>
+            </button>
+          </div>
+        </div>
+        <div class="best-deal" height="200px">
+          <img src="images/8829609.webp" alt="" />
+          <div class="prod-details">
+            <div class="mb-2 mt-2">
+              <span>12kg</span>
+            </div>
+            <h5>Green Cylinder Product</h5>
+            <div class="product-price-variant gap5">
+              <span class="price current-price smallBoldF">N8500.00</span>
+              <span class="price old-price priceLine">N12500.00</span>
+            </div>
+          </div>
+          <div
+            class="d-flex flex-row justify-content-start align-items-center gap-2 mt-2"
+          >
+            <button class="btn text-success border-success">
+              Add to cart
+              <i class="fa fa-shopping-cart ms-1"></i>
+            </button>
+          </div>
+        </div>
+        <div class="best-deal" height="200px">
+          <img src="images/8816656.webp" alt="" />
+          <div class="prod-details">
+            <div class="mb-2 mt-2">
+              <span>12kg</span>
+            </div>
+            <h5>Green Cylinder Product</h5>
+            <div class="product-price-variant gap5">
+              <span class="price current-price smallBoldF">N8500.00</span>
+              <span class="price old-price priceLine">N12500.00</span>
+            </div>
+          </div>
+          <div
+            class="d-flex flex-row justify-content-start align-items-center gap-2 mt-2"
+          >
+            <button class="btn text-success border-success">
+              Add to cart
+              <i class="fa fa-shopping-cart ms-1"></i>
+            </button>
+          </div>
+        </div>
+        <div class="best-deal" height="200px">
+          <img src="images/8816656.webp" alt="" />
+          <div class="prod-details">
+            <div class="mb-2 mt-2">
+              <span>12kg</span>
+            </div>
+            <h5>Green Cylinder Product</h5>
+            <div class="product-price-variant gap5">
+              <span class="price current-price smallBoldF">N8500.00</span>
+              <span class="price old-price priceLine">N12500.00</span>
+            </div>
+          </div>
+          <div
+            class="d-flex flex-row justify-content-start align-items-center gap-2 mt-2"
+          >
+            <button class="btn text-success border-success">
+              Add to cart
+              <i class="fa fa-shopping-cart ms-1"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="d-flex align-items-center justify-content-center py-5 mt-5">
+        <nav aria-label="Standard pagination example">
+          <ul class="pagination">
+            <li class="page-item">
+              <a class="page-link" href="#" aria-label="Previous">
+                <span aria-hidden="true">&laquo;</span>
+              </a>
+            </li>
+            <li class="page-item">
+              <a class="page-link text-success" href="#">1</a>
+            </li>
+            <li class="page-item">
+              <a class="page-link text-success" href="#">2</a>
+            </li>
+            <li class="page-item">
+              <a class="page-link text-success" href="#">3</a>
+            </li>
+            <li class="page-item">
+              <a class="page-link" href="#" aria-label="Next">
+                <span aria-hidden="true">&raquo;</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </section>
+
+    <section class="section-weekly-popular">
+      <h3>People Recently Viewed</h3>
+      <div class="section-weekly-box">
+        <div class="best-deal" height="200px">
+          <img src="images/8816656.webp" alt="" />
+          <div class="prod-details">
+            <div class="mb-2 mt-2">
+              <span>12kg</span>
+            </div>
+            <h5>Green Cylinder Product</h5>
+            <div class="product-price-variant gap5">
+              <span class="price current-price smallBoldF">N8500.00</span>
+              <span class="price old-price priceLine">N12500.00</span>
+            </div>
+          </div>
+          <div
+            class="d-flex flex-row justify-content-start align-items-center gap-2 mt-2"
+          >
+            <button class="btn text-success border-success">
+              Add to cart
+              <i class="fa fa-shopping-cart ms-1"></i>
+            </button>
+          </div>
+        </div>
+        <div class="best-deal" height="200px">
+          <img src="images/8829612.webp" alt="" />
+          <div class="prod-details">
+            <div class="mb-2 mt-2">
+              <span>12kg</span>
+            </div>
+            <h5>Green Cylinder Product</h5>
+            <div class="product-price-variant gap5">
+              <span class="price current-price smallBoldF">N8500.00</span>
+              <span class="price old-price priceLine">N12500.00</span>
+            </div>
+          </div>
+          <div
+            class="d-flex flex-row justify-content-start align-items-center gap-2 mt-2"
+          >
+            <button class="btn text-success border-success">
+              Add to cart
+              <i class="fa fa-shopping-cart ms-1"></i>
+            </button>
+          </div>
+        </div>
+        <div class="best-deal" height="200px">
+          <img src="images/8829609.webp" alt="" />
+          <div class="prod-details">
+            <div class="mb-2 mt-2">
+              <span>12kg</span>
+            </div>
+            <h5>Green Cylinder Product</h5>
+            <div class="product-price-variant gap5">
+              <span class="price current-price smallBoldF">N8500.00</span>
+              <span class="price old-price priceLine">N12500.00</span>
+            </div>
+          </div>
+          <div
+            class="d-flex flex-row justify-content-start align-items-center gap-2 mt-2"
+          >
+            <button class="btn text-success border-success">
+              Add to cart
+              <i class="fa fa-shopping-cart ms-1"></i>
+            </button>
+          </div>
+        </div>
+
+        <div class="best-deal" height="200px">
+          <img src="images/8816656.webp" alt="" />
+          <div class="prod-details">
+            <div class="mb-2 mt-2">
+              <span>12kg</span>
+            </div>
+            <h5>Green Cylinder Product</h5>
+            <div class="product-price-variant gap5">
+              <span class="price current-price smallBoldF">N8500.00</span>
+              <span class="price old-price priceLine">N12500.00</span>
+            </div>
+          </div>
+          <div
+            class="d-flex flex-row justify-content-start align-items-center gap-2 mt-2"
+          >
+            <button class="btn text-success border-success">
+              Add to cart
+              <i class="fa fa-shopping-cart ms-1"></i>
+            </button>
           </div>
         </div>
       </div>
@@ -1500,7 +797,7 @@
 
     <section class="section-banner d-flex justify-content-center">
       <div class="container py-4">
-        <div class="refill-box p-5 mb-4 bg-light rounded-3 text-white">
+        <div class="refill-box mb-4 bg-light rounded-3 text-white">
           <div class="container-fluid py-5">
             <h1 class="display-5 fw-bold">Refill Your Gas</h1>
             <p class="col-md-8 fs-4 mb-5">
@@ -1520,7 +817,7 @@
 
         <div class="row align-items-md-stretch">
           <div class="col-md-6">
-            <div class="repaint-box h-100 p-5 text-bg-success rounded-3">
+            <div class="repaint-box h-100 text-bg-success rounded-3">
               <h2 class="mb-3">Paint Your Gas Bottle</h2>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea
@@ -1537,7 +834,7 @@
             </div>
           </div>
           <div class="col-md-6">
-            <div class="accessories-box h-100 p-5 bg-light border rounded-3">
+            <div class="accessories-box h-100 bg-light border rounded-3">
               <h2 class="mb-3">Accessories</h2>
               <p>
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit.

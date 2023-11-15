@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="queries.css" />
     <link href="navbar-top-fixed.css" rel="stylesheet" />
     <link
       rel="canonical"
@@ -43,7 +44,7 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
-          <a class="navbar-brand" href="#"
+          <a class="navbar-brand" href="index.html"
             ><img class="logo" src="images/cropped-hydropet-logo.png" alt=""
           /></a>
           <ul class="navbar-nav me-auto mb-2 ms-5 mb-md-0 gap-4">
@@ -74,9 +75,6 @@
             <li class="nav-item">
               <a class="nav-link text-black" href="about.html">About</a>
             </li>
-            <li class="nav-item">
-              <a href="blog.html" class="nav-link text-black">Blog</a>
-            </li>
           </ul>
           <!-- <form class="d-flex" role="search">
             <input
@@ -95,14 +93,15 @@
             </button>
           </form> -->
           <div class="d-flex mt-2">
-            <button
-              class="btn btn-outline-success bg-success text-white p-1 text-nowrap ms-3 px-3"
+            <a
+              href="javascript:void(Tawk_API.toggle())"
+              class="btn btn-outline-success text-success p-1 text-nowrap ms-3 px-3"
               type="submit"
             >
               Order a Refill
-            </button>
+            </a>
             <button
-              class="button-cart btn bg-success text-white d-flex p-1 text-nowrap ms-3 px-3"
+              class="button-cart btn text-success d-flex p-1 text-nowrap ms-3 px-3"
               onclick="window.location.href='cart.html';"
             >
               <ion-icon
@@ -184,36 +183,315 @@
       </table>
     </section>
 
-    <section class="cart-add">
-      <div class="coupon">
-        <h3>Apply Coupon</h3>
-        <div>
-          <input type="text" placeholder="Enter Your Coupon" />
-          <button class="btn bg-success text-white">Apply</button>
+    <div class="col-md-7 col-lg-8 w-75 mx-auto mt-5 pt-5">
+      <h4 class="mb-3">Billing address</h4>
+      <form class="needs-validation" novalidate>
+        <div class="row g-3">
+          <div class="col-sm-6">
+            <label for="firstName" class="form-label">First name</label>
+            <input
+              type="text"
+              class="form-control"
+              id="firstName"
+              placeholder=""
+              value=""
+              required
+            />
+            <div class="invalid-feedback">Valid first name is required.</div>
+          </div>
+
+          <div class="col-sm-6">
+            <label for="lastName" class="form-label">Last name</label>
+            <input
+              type="text"
+              class="form-control"
+              id="lastName"
+              placeholder=""
+              value=""
+              required
+            />
+            <div class="invalid-feedback">Valid last name is required.</div>
+          </div>
+
+          <div class="col-12">
+            <label for="phone-number" class="form-label">Phone Number</label>
+            <div class="input-group has-validation">
+              <span class="input-group-text">+234</span>
+              <input
+                type="number"
+                class="form-control"
+                id="phone-number"
+                placeholder="Phone Number"
+                required
+              />
+              <div class="invalid-feedback">Your phone number is required.</div>
+            </div>
+          </div>
+
+          <div class="col-12">
+            <label for="email" class="form-label"
+              >Email <span class="text-muted">(Optional)</span></label
+            >
+            <input
+              type="email"
+              class="form-control"
+              id="email"
+              placeholder="you@example.com"
+            />
+            <div class="invalid-feedback">
+              Please enter a valid email address for shipping updates.
+            </div>
+          </div>
+
+          <div class="col-12">
+            <label for="address" class="form-label">Address</label>
+            <input
+              type="text"
+              class="form-control"
+              id="address"
+              placeholder="1234 Main St"
+              required
+            />
+            <div class="invalid-feedback">
+              Please enter your shipping address.
+            </div>
+          </div>
+
+          <div class="col-12">
+            <label for="address2" class="form-label"
+              >Address 2 <span class="text-muted">(Optional)</span></label
+            >
+            <input
+              type="text"
+              class="form-control"
+              id="address2"
+              placeholder="Apartment or suite"
+            />
+          </div>
+
+          <div class="col-md-5">
+            <label for="city" class="form-label">City</label>
+            <select class="form-select" id="city" required>
+              <option value="">Choose...</option>
+              <option>Port-Harcourt</option>
+            </select>
+            <div class="invalid-feedback">Please select a valid city.</div>
+          </div>
+
+          <div class="col-md-4">
+            <label for="state" class="form-label">State</label>
+            <select class="form-select" id="state" required>
+              <option value="">Choose...</option>
+              <option>Rivers State</option>
+            </select>
+            <div class="invalid-feedback">Please provide a valid state.</div>
+          </div>
+
+          <div class="col-md-3">
+            <label for="zip" class="form-label">Zip</label>
+            <input
+              type="text"
+              class="form-control"
+              id="zip"
+              placeholder=""
+              required
+            />
+            <div class="invalid-feedback">Zip code required.</div>
+          </div>
         </div>
-      </div>
 
-      <div class="subtotal">
-        <h3>Cart Totals</h3>
-        <table>
-          <tr>
-            <td>Cart Subtotal</td>
-            <td>N12,500</td>
-          </tr>
+        <h4 class="mb-3 mt-5">Delivery Method</h4>
 
-          <tr>
-            <td>Shipping</td>
-            <td>--</td>
-          </tr>
+        <div class="my-3">
+          <div class="form-check">
+            <input
+              id="home-delivery"
+              name="paymentMethod"
+              type="radio"
+              class="form-check-input"
+              checked
+              required
+            />
+            <label for="home-delivery">Home Delivery </label>
+          </div>
+          <div class="form-check">
+            <input
+              id="walk-in"
+              name="paymentMethod"
+              type="radio"
+              class="form-check-input"
+              required
+            />
+            <label
+              class="form-check-label d-flex align-items-center"
+              for="walk-in"
+              >Walk-In PickUp
+              <ion-icon
+                class="cc-info-icon ms-1"
+                name="information-circle"
+              ></ion-icon
+              ><small class="cc-info-message hidden"
+                >Visit our office to pick your order.</small
+              ></label
+            >
+          </div>
+        </div>
 
-          <tr>
-            <td><strong>Total</strong></td>
-            <td><strong>N12,500</strong></td>
-          </tr>
-        </table>
-        <button class="btn bg-success text-white">Proceed to Checkout</button>
-      </div>
-    </section>
+        <hr class="my-4" />
+
+        <div class="form-check">
+          <input type="checkbox" class="form-check-input" id="same-address" />
+          <label class="form-check-label" for="same-address"
+            >Shipping address is the same as my billing address</label
+          >
+        </div>
+
+        <div class="form-check">
+          <input type="checkbox" class="form-check-input" id="save-info" />
+          <label class="form-check-label" for="save-info"
+            >Save this information for next time</label
+          >
+        </div>
+
+        <hr class="my-4" />
+
+        <h4 class="mb-3">Payment Method</h4>
+
+        <div class="my-3">
+          <div class="form-check">
+            <input
+              id="credit"
+              name="paymentMethod"
+              type="radio"
+              class="form-check-input"
+              checked
+              required
+              disabled
+            />
+            <label
+              class="form-check-label d-flex align-items-center"
+              for="credit"
+              >Credit card
+              <ion-icon
+                class="cc-info-icon ms-1"
+                name="information-circle"
+              ></ion-icon
+              ><small class="cc-info-message hidden"
+                >This payment method is not available for now!</small
+              ></label
+            >
+          </div>
+          <div class="form-check">
+            <input
+              id="debit"
+              name="paymentMethod"
+              type="radio"
+              class="form-check-input"
+              required
+            />
+            <label class="form-check-label" for="debit">Transfer</label>
+          </div>
+        </div>
+
+        <div class="cc-info row gy-3">
+          <div class="col-md-6">
+            <label for="cc-name" class="form-label">Name on card</label>
+            <input
+              type="text"
+              class="form-control"
+              id="cc-name"
+              placeholder=""
+              required
+              disabled
+            />
+            <small class="text-muted">Full name as displayed on card</small>
+            <div class="invalid-feedback">Name on card is required</div>
+          </div>
+
+          <div class="col-md-6">
+            <label for="cc-number" class="form-label">Credit card number</label>
+            <input
+              type="text"
+              class="form-control"
+              id="cc-number"
+              placeholder=""
+              required
+              disabled
+            />
+            <div class="invalid-feedback">Credit card number is required</div>
+          </div>
+
+          <div class="col-md-3">
+            <label for="cc-expiration" class="form-label">Expiration</label>
+            <input
+              type="text"
+              class="form-control"
+              id="cc-expiration"
+              placeholder=""
+              required
+              disabled
+            />
+            <div class="invalid-feedback">Expiration date required</div>
+          </div>
+
+          <div class="col-md-3">
+            <label for="cc-cvv" class="form-label">CVV</label>
+            <input
+              type="text"
+              class="form-control"
+              id="cc-cvv"
+              placeholder=""
+              required
+              disabled
+            />
+            <div class="invalid-feedback">Security code required</div>
+          </div>
+        </div>
+
+        <hr class="my-4" />
+
+        <section class="cart-add">
+          <div class="coupon">
+            <h3>Apply Coupon</h3>
+            <div>
+              <input type="text" placeholder="Enter Your Coupon" />
+              <button class="btn bg-success text-white">Apply</button>
+            </div>
+          </div>
+
+          <div class="subtotal">
+            <h3>Cart Totals</h3>
+            <table>
+              <tr>
+                <td>Cart Subtotal</td>
+                <td>N12,500</td>
+              </tr>
+
+              <tr>
+                <td>Shipping</td>
+                <td>--</td>
+              </tr>
+
+              <tr>
+                <td><strong>Total</strong></td>
+                <td><strong>N12,500</strong></td>
+              </tr>
+            </table>
+            <!-- <button class="btn bg-success text-white">
+              Proceed to Checkout
+            </button> -->
+          </div>
+        </section>
+
+        <a
+          href="order-confirm.html"
+          class="w-100 btn btn-lg bg-success text-white"
+          type="submit"
+        >
+          Continue to checkout
+        </a>
+      </form>
+    </div>
 
     <footer class="text-muted py-5">
       <div class="container">
@@ -227,6 +505,19 @@
         </p>
       </div>
     </footer>
+
+    <script>
+      let creditInfoBox = document.querySelector(".cc-info");
+      document.getElementById("debit").addEventListener("click", function () {
+        creditInfoBox.style.display = "none";
+      });
+
+      let creditInfoIcon = document.querySelector(".cc-info-icon");
+      let creditInfoMessage = document.querySelector(".cc-info-message");
+      creditInfoIcon.addEventListener("click", function () {
+        creditInfoMessage.classList.toggle("hidden");
+      });
+    </script>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"

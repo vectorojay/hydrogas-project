@@ -1,0 +1,721 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      text-success
+      name="viewport"
+      content="width=device-width, initial-scale=1"
+    />
+    <meta name="description" content="" />
+    <meta
+      name="author"
+      content="Mark Otto, Jacob Thornton, and Bootstrap contributors"
+    />
+    <meta name="generator" content="Hugo 0.104.2" />
+    <title>HydroGas-FAQs</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="queries.css" />
+    <link rel="stylesheet" href="services.css" />
+    <link
+      rel="canonical"
+      href="https://getbootstrap.com/docs/5.2/examples/album/"
+    />
+
+    <link
+      href="../bootstrap-5.2.2-examples/assets/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- <div class="p-1 grid gap-3 bg-success text-white d-flex">
+      <p><ion-icon name="mail-sharp"></ion-icon>info@hydrogas.com.ng</p>
+      <p><ion-icon name="phone-portrait-sharp"></ion-icon>+234-706-964-2083</p>
+    </div> -->
+
+    <nav class="navbar navbar-expand-md bg-light p-3 sticky-top">
+      <div class="container-fluid mx-auto">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarCollapse"
+          aria-controls="navbarCollapse"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <a class="navbar-brand" href="index.html"
+            ><img class="logo" src="images/cropped-hydropet-logo.png" alt=""
+          /></a>
+          <ul class="navbar-nav me-auto mb-2 ms-5 mb-md-0 gap-4">
+            <li class="nav-item">
+              <a
+                class="nav-link text-black active"
+                aria-current="page"
+                href="index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link text-black active"
+                aria-current="page"
+                href="services.html"
+                >Services</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link text-black active"
+                aria-current="page"
+                href="shop.html"
+                >Shop</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-black" href="about.html">About</a>
+            </li>
+          </ul>
+          <!-- <form class="d-flex" role="search">
+            <input
+              class="form-control me-2 p-2"
+              id="search-input"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button
+              class="btn btn-outline-success btn-border-orange text-orange p-1"
+              id="search-btn"
+              type="submit"
+            >
+              Search
+            </button>
+          </form> -->
+          <div class="d-flex mt-2">
+            <a
+              href="javascript:void(Tawk_API.toggle())"
+              class="btn btn-outline-success text-success p-1 text-nowrap ms-3 px-3"
+              type="submit"
+            >
+              Order a Refill
+            </a>
+            <button
+              class="button-cart btn text-success d-flex p-1 text-nowrap ms-3 px-3"
+              onclick="window.location.href='cart.html';"
+            >
+              <ion-icon
+                name="cart"
+                style="height: 1.8rem; width: 1.8rem"
+              ></ion-icon>
+              <div class="cart-number-box">
+                <span class="cart-number text-white">15</span>
+              </div>
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <section class="section-shop-header">
+      <div class="backdrop">
+        <div class="container col-xxl-8 px-4 py-5 w-75 mx-auto">
+          <div class="align-items-center g-5 py-5">
+            <div class="col-lg-6">
+              <h2 class="display-5 fw-bold lh-1 mb-3 text-white">FAQs</h2>
+              <p class="text-orange">
+                Browse through the list of FAQs to have your questions answered.
+                If you have any other qustions, kindly
+                <a class="text-white" href="javascript:void(Tawk_API.toggle())"
+                  >Contact Us</a
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-faq">
+      <div class="w-75 mx-auto">
+        <h5 class="mb-3">Frequently Asked Questions</h5>
+      </div>
+      <div class="accordion w-75 mx-auto" id="accordionExample">
+        <div class="accordion-item">
+          <h4 class="accordion-header" id="headingOne">
+            <button
+              class="accordion-button text-success collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseOne"
+              aria-expanded="true"
+              aria-controls="collapseOne"
+            >
+              How can I place an order for a Gas Cylinder?
+            </button>
+          </h4>
+          <div
+            id="collapseOne"
+            class="accordion-collapse collapse show"
+            aria-labelledby="headingOne"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body">
+              <strong
+                >Lorem ipsum, dolor sit amet consectetur adipisicing
+                elit</strong
+              >
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione
+              ab eveniet recusandae, eaque tempore praesentium reprehenderit
+              consectetur rerum alias, voluptatem sint nisi quas! Doloribus
+              voluptates ipsam perferendis facere eaque laudantium nihil at,
+              quae neque qui nostrum tenetur perspiciatis odit sit officia esse
+              architecto atque, molestiae voluptatum natus, ratione porro.
+              Voluptatem provident quo esse quam alias ducimus. Impedit ullam
+              molestias quaerat!
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h4 class="accordion-header" id="headingTwo">
+            <button
+              class="accordion-button text-success collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseTwo"
+              aria-expanded="false"
+              aria-controls="collapseTwo"
+            >
+              How do I find the nearest gas station using the website?
+            </button>
+          </h4>
+          <div
+            id="collapseTwo"
+            class="accordion-collapse collapse"
+            aria-labelledby="headingTwo"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body">
+              <strong
+                >Lorem ipsum, dolor sit amet consectetur adipisicing
+                elit.</strong
+              >
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione
+              ab eveniet recusandae, eaque tempore praesentium reprehenderit
+              consectetur rerum alias, voluptatem sint nisi quas! Doloribus
+              voluptates ipsam perferendis facere eaque laudantium nihil at,
+              quae neque qui nostrum tenetur perspiciatis odit sit officia esse
+              architecto atque, molestiae voluptatum natus, ratione porro.
+              Voluptatem provident quo esse quam alias ducimus. Impedit ullam
+              molestias quaerat!
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h4 class="accordion-header" id="headingThree">
+            <button
+              class="accordion-button text-success collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseThree"
+              aria-expanded="false"
+              aria-controls="collapseThree"
+            >
+              Can I also make an order for my Gas Cylinder to be picked up and
+              refilled?
+            </button>
+          </h4>
+          <div
+            id="collapseThree"
+            class="accordion-collapse collapse"
+            aria-labelledby="headingThree"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body">
+              <strong
+                >Lorem ipsum, dolor sit amet consectetur adipisicing
+                elit</strong
+              >
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione
+              ab eveniet recusandae, eaque tempore praesentium reprehenderit
+              consectetur rerum alias, voluptatem sint nisi quas! Doloribus
+              voluptates ipsam perferendis facere eaque laudantium nihil at,
+              quae neque qui nostrum tenetur perspiciatis odit sit officia esse
+              architecto atque, molestiae voluptatum natus, ratione porro.
+              Voluptatem provident quo esse quam alias ducimus. Impedit ullam
+              molestias quaerat!
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h4 class="accordion-header" id="headingFour">
+            <button
+              class="accordion-button text-success collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseFour"
+              aria-expanded="false"
+              aria-controls="collapseFour"
+            >
+              What payment methods are accepted on the website for gas
+              purchases?
+            </button>
+          </h4>
+          <div
+            id="collapseFour"
+            class="accordion-collapse collapse"
+            aria-labelledby="headingFour"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body">
+              <strong
+                >Lorem ipsum, dolor sit amet consectetur adipisicing
+                elit</strong
+              >
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione
+              ab eveniet recusandae, eaque tempore praesentium reprehenderit
+              consectetur rerum alias, voluptatem sint nisi quas! Doloribus
+              voluptates ipsam perferendis facere eaque laudantium nihil at,
+              quae neque qui nostrum tenetur perspiciatis odit sit officia esse
+              architecto atque, molestiae voluptatum natus, ratione porro.
+              Voluptatem provident quo esse quam alias ducimus. Impedit ullam
+              molestias quaerat!
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h4 class="accordion-header" id="headingFive">
+            <button
+              class="accordion-button text-success collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseFive"
+              aria-expanded="false"
+              aria-controls="collapseFive"
+            >
+              How long do I have to wait to receive my order?
+            </button>
+          </h4>
+          <div
+            id="collapseFive"
+            class="accordion-collapse collapse"
+            aria-labelledby="headingFive"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body">
+              <strong
+                >Lorem ipsum, dolor sit amet consectetur adipisicing
+                elit.</strong
+              >
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione
+              ab eveniet recusandae, eaque tempore praesentium reprehenderit
+              consectetur rerum alias, voluptatem sint nisi quas! Doloribus
+              voluptates ipsam perferendis facere eaque laudantium nihil at,
+              quae neque qui nostrum tenetur perspiciatis odit sit officia esse
+              architecto atque, molestiae voluptatum natus, ratione porro.
+              Voluptatem provident quo esse quam alias ducimus. Impedit ullam
+              molestias quaerat!
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h4 class="accordion-header" id="headingSix">
+            <button
+              class="accordion-button text-success collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseSix"
+              aria-expanded="false"
+              aria-controls="collapseSix"
+            >
+              What safety measures are in place for the delivery of gas orders?
+            </button>
+          </h4>
+          <div
+            id="collapseSix"
+            class="accordion-collapse collapse"
+            aria-labelledby="headingSix"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body">
+              <strong
+                >Lorem ipsum, dolor sit amet consectetur adipisicing
+                elit</strong
+              >
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione
+              ab eveniet recusandae, eaque tempore praesentium reprehenderit
+              consectetur rerum alias, voluptatem sint nisi quas! Doloribus
+              voluptates ipsam perferendis facere eaque laudantium nihil at,
+              quae neque qui nostrum tenetur perspiciatis odit sit officia esse
+              architecto atque, molestiae voluptatum natus, ratione porro.
+              Voluptatem provident quo esse quam alias ducimus. Impedit ullam
+              molestias quaerat!
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h4 class="accordion-header" id="headingSeven">
+            <button
+              class="accordion-button text-success collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseSeven"
+              aria-expanded="false"
+              aria-controls="collapseSeven"
+            >
+              What should I do if I encounter technical issues while using the
+              website?
+            </button>
+          </h4>
+          <div
+            id="collapseSeven"
+            class="accordion-collapse collapse"
+            aria-labelledby="headingSeven"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body">
+              <strong
+                >Lorem ipsum, dolor sit amet consectetur adipisicing
+                elit.</strong
+              >
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit
+              nostrum sint alias sunt nam! Tempora saepe rerum, porro error nam
+              autem eligendi deserunt quisquam ipsum explicabo sint officiis
+              dolor voluptatum. Odit veniam nesciunt culpa est nemo quo fugit
+              nihil deleniti enim totam. Lorem ipsum dolor sit amet consectetur,
+              adipisicing elit.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h4 class="accordion-header" id="headingEight">
+            <button
+              class="accordion-button text-success collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseEight"
+              aria-expanded="false"
+              aria-controls="collapseEight"
+            >
+              How can I track the status of my gas delivery after placing an
+              order?
+            </button>
+          </h4>
+          <div
+            id="collapseEight"
+            class="accordion-collapse collapse"
+            aria-labelledby="headingEight"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body">
+              <strong
+                >Lorem ipsum, dolor sit amet consectetur adipisicing
+                elit.</strong
+              >
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione
+              ab eveniet recusandae, eaque tempore praesentium reprehenderit
+              consectetur rerum alias, voluptatem sint nisi quas! Doloribus
+              voluptates ipsam perferendis facere eaque laudantium nihil at,
+              quae neque qui nostrum tenetur perspiciatis odit sit officia esse
+              architecto atque, molestiae voluptatum natus, ratione porro.
+              Voluptatem provident quo esse quam alias ducimus. Impedit ullam
+              molestias quaerat!
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h4 class="accordion-header" id="headingNine">
+            <button
+              class="accordion-button text-success collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseNine"
+              aria-expanded="false"
+              aria-controls="collapseNine"
+            >
+              How can I contact customer support for further assistance or
+              inquiries?
+            </button>
+          </h4>
+          <div
+            id="collapseNine"
+            class="accordion-collapse collapse"
+            aria-labelledby="headingNine"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body">
+              <strong
+                >Lorem ipsum, dolor sit amet consectetur adipisicing
+                elit.</strong
+              >
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione
+              ab eveniet recusandae, eaque tempore praesentium reprehenderit
+              consectetur rerum alias, voluptatem sint nisi quas! Doloribus
+              voluptates ipsam perferendis facere eaque laudantium nihil at,
+              quae neque qui nostrum tenetur perspiciatis odit sit officia esse
+              architecto atque, molestiae voluptatum natus, ratione porro.
+              Voluptatem provident quo esse quam alias ducimus. Impedit ullam
+              molestias quaerat!
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h4 class="accordion-header" id="headingNine">
+            <button
+              class="accordion-button text-success collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseNine"
+              aria-expanded="false"
+              aria-controls="collapseNine"
+            >
+              What should I do if my payment is declined during the checkout
+              process?
+            </button>
+          </h4>
+          <div
+            id="collapseNine"
+            class="accordion-collapse collapse"
+            aria-labelledby="headingNine"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body">
+              <strong
+                >Lorem ipsum, dolor sit amet consectetur adipisicing
+                elit.</strong
+              >
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione
+              ab eveniet recusandae, eaque tempore praesentium reprehenderit
+              consectetur rerum alias, voluptatem sint nisi quas! Doloribus
+              voluptates ipsam perferendis facere eaque laudantium nihil at,
+              quae neque qui nostrum tenetur perspiciatis odit sit officia esse
+              architecto atque, molestiae voluptatum natus, ratione porro.
+              Voluptatem provident quo esse quam alias ducimus. Impedit ullam
+              molestias quaerat!
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h4 class="accordion-header" id="headingNine">
+            <button
+              class="accordion-button text-success collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseNine"
+              aria-expanded="false"
+              aria-controls="collapseNine"
+            >
+              What should I do if I find out that a faulty product was delivered
+              to me?
+            </button>
+          </h4>
+          <div
+            id="collapseNine"
+            class="accordion-collapse collapse"
+            aria-labelledby="headingNine"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body">
+              <strong
+                >Lorem ipsum, dolor sit amet consectetur adipisicing
+                elit.</strong
+              >
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione
+              ab eveniet recusandae, eaque tempore praesentium reprehenderit
+              consectetur rerum alias, voluptatem sint nisi quas! Doloribus
+              voluptates ipsam perferendis facere eaque laudantium nihil at,
+              quae neque qui nostrum tenetur perspiciatis odit sit officia esse
+              architecto atque, molestiae voluptatum natus, ratione porro.
+              Voluptatem provident quo esse quam alias ducimus. Impedit ullam
+              molestias quaerat!
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h4 class="accordion-header" id="headingNine">
+            <button
+              class="accordion-button text-success collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseNine"
+              aria-expanded="false"
+              aria-controls="collapseNine"
+            >
+              How do I order for my new Gas Cylinder to be filled before
+              delivery when purchasing a new Cylinder from the website?
+            </button>
+          </h4>
+          <div
+            id="collapseNine"
+            class="accordion-collapse collapse"
+            aria-labelledby="headingNine"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body">
+              <strong
+                >Lorem ipsum, dolor sit amet consectetur adipisicing
+                elit.</strong
+              >
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione
+              ab eveniet recusandae, eaque tempore praesentium reprehenderit
+              consectetur rerum alias, voluptatem sint nisi quas! Doloribus
+              voluptates ipsam perferendis facere eaque laudantium nihil at,
+              quae neque qui nostrum tenetur perspiciatis odit sit officia esse
+              architecto atque, molestiae voluptatum natus, ratione porro.
+              Voluptatem provident quo esse quam alias ducimus. Impedit ullam
+              molestias quaerat!
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-weekly-popular">
+      <h3>Best Deals For You</h3>
+      <div class="section-weekly-box">
+        <div class="best-deal" height="200px">
+          <img src="images/8816656.webp" alt="" />
+          <div class="prod-details">
+            <div class="mb-2 mt-2">
+              <span>12kg</span>
+            </div>
+            <h5>Green Cylinder Product</h5>
+            <div class="product-price-variant gap5">
+              <span class="price current-price smallBoldF">N8500.00</span>
+              <span class="price old-price priceLine">N12500.00</span>
+            </div>
+          </div>
+          <div
+            class="d-flex flex-row justify-content-start align-items-center gap-2 mt-2"
+          >
+            <button class="btn text-success border-success">
+              Add to cart
+              <i class="fa fa-shopping-cart ms-1"></i>
+            </button>
+          </div>
+        </div>
+        <div class="best-deal" height="200px">
+          <img src="images/8829612.webp" alt="" />
+          <div class="prod-details">
+            <div class="mb-2 mt-2">
+              <span>12kg</span>
+            </div>
+            <h5>Green Cylinder Product</h5>
+            <div class="product-price-variant gap5">
+              <span class="price current-price smallBoldF">N8500.00</span>
+              <span class="price old-price priceLine">N12500.00</span>
+            </div>
+          </div>
+          <div
+            class="d-flex flex-row justify-content-start align-items-center gap-2 mt-2"
+          >
+            <button class="btn text-success border-success">
+              Add to cart
+              <i class="fa fa-shopping-cart ms-1"></i>
+            </button>
+          </div>
+        </div>
+        <div class="best-deal" height="200px">
+          <img src="images/8829609.webp" alt="" />
+          <div class="prod-details">
+            <div class="mb-2 mt-2">
+              <span>12kg</span>
+            </div>
+            <h5>Green Cylinder Product</h5>
+            <div class="product-price-variant gap5">
+              <span class="price current-price smallBoldF">N8500.00</span>
+              <span class="price old-price priceLine">N12500.00</span>
+            </div>
+          </div>
+          <div
+            class="d-flex flex-row justify-content-start align-items-center gap-2 mt-2"
+          >
+            <button class="btn text-success border-success">
+              Add to cart
+              <i class="fa fa-shopping-cart ms-1"></i>
+            </button>
+          </div>
+        </div>
+
+        <div class="best-deal" height="200px">
+          <img src="images/8816656.webp" alt="" />
+          <div class="prod-details">
+            <div class="mb-2 mt-2">
+              <span>12kg</span>
+            </div>
+            <h5>Green Cylinder Product</h5>
+            <div class="product-price-variant gap5">
+              <span class="price current-price smallBoldF">N8500.00</span>
+              <span class="price old-price priceLine">N12500.00</span>
+            </div>
+          </div>
+          <div
+            class="d-flex flex-row justify-content-start align-items-center gap-2 mt-2"
+          >
+            <button class="btn text-success border-success">
+              Add to cart
+              <i class="fa fa-shopping-cart ms-1"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="text-muted py-5">
+      <div class="container">
+        <p class="float-end mb-1">
+          <a href="#">Back to top</a>
+        </p>
+        <p class="mb-1">&copy; HydroPet 2023</p>
+        <p class="mb-0">
+          Just Browsing? <a href="/">Visit our store</a> or reach out to us via
+          our <a href="../getting-started/introduction/">contact</a>.
+        </p>
+      </div>
+    </footer>
+
+    <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+
+    <!--Start of Tawk.to Script-->
+    <script type="text/javascript">
+      var Tawk_API = Tawk_API || {},
+        Tawk_LoadStart = new Date();
+      (function () {
+        var s1 = document.createElement("script"),
+          s0 = document.getElementsByTagName("script")[0];
+        s1.async = true;
+        s1.src = "https://embed.tawk.to/6509b11f0f2b18434fd9625b/1hamtnprj";
+        s1.charset = "UTF-8";
+        s1.setAttribute("crossorigin", "*");
+        s0.parentNode.insertBefore(s1, s0);
+      })();
+    </script>
+    <!--End of Tawk.to Script-->
+  </body>
+</html>

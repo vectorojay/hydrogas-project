@@ -75,6 +75,15 @@
     width: unset;
   }
 
+  .section-featured-products {
+    padding: 10px !important;
+  }
+
+  .featured-product-box {
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+  }
+
   .map {
     height: 400px;
     width: 400px;
@@ -90,6 +99,15 @@
   .shop-accessories-box {
     grid-template-columns: repeat(3, 1fr);
     row-gap: 20px;
+  }
+
+  .section-featured-products {
+    padding: 10px !important;
+  }
+
+  .featured-product-box {
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
   }
 }
 
@@ -112,6 +130,15 @@
 
   .help img {
     height: 200px;
+  }
+
+  .section-featured-products {
+    padding: 10px !important;
+  }
+
+  .featured-product-box {
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
   }
 
   .cylinders-box {
@@ -159,6 +186,15 @@
 
   .achievements-box {
     gap: 50px;
+  }
+
+  .section-featured-products {
+    padding: 10px !important;
+  }
+
+  .featured-product-box {
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
   }
 
   .category-box {
@@ -217,6 +253,15 @@
     grid-template-columns: repeat(2, 1fr);
   }
 
+  .section-featured-products {
+    padding: 10px !important;
+  }
+
+  .featured-product-box {
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+  }
+
   .cart-add {
     flex-direction: column;
     padding: 0;
@@ -273,6 +318,15 @@
     width: 100%;
   }
 
+  .section-featured-products {
+    padding: 10px !important;
+  }
+
+  .featured-product-box {
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+  }
+
   /******************* SINGLE PRODUCT **************************/
 
   .section-product {
@@ -300,6 +354,19 @@
 
   .subtotal {
     width: 100%;
+  }
+
+  .section-featured-products {
+    padding: 10px !important;
+  }
+
+  .featured-product-box {
+    grid-template-columns: repeat(1, 1fr);
+    justify-items: center;
+  }
+
+  .cylinders-box {
+    grid-template-columns: repeat(1, 1fr);
   }
 
   /******************* SINGLE PRODUCT **************************/
@@ -342,6 +409,15 @@
 
   .section-weekly-box {
     grid-template-columns: repeat(1, 1fr);
+  }
+
+  .section-featured-products {
+    padding: 10px !important;
+  }
+
+  .featured-product-box {
+    grid-template-columns: repeat(1, 1fr);
+    justify-items: center;
   }
 
   .cylinders-box {

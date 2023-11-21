@@ -290,6 +290,10 @@ span {
   color: #198754;
 }
 
+.extra-text {
+  color: inherit !important;
+}
+
 /****************** SECTION HELP ***********************/
 
 .section-help-box {

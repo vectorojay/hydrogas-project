@@ -316,6 +316,18 @@
   .right {
     width: 100%;
   }
+
+  .retail-outlets {
+    grid-template-columns: 1fr;
+  }
+
+  .map {
+    width: 300px;
+  }
+
+  .about-us-img-box {
+    padding: 5px;
+  }
 }
 
 @media (max-width: 414px) {
@@ -381,6 +393,18 @@
   .right {
     width: 100%;
   }
+
+  .retail-outlets {
+    grid-template-columns: 1fr;
+  }
+
+  .map {
+    width: 300px;
+  }
+
+  .about-us-img-box {
+    padding: 5px;
+  }
 }
 
 @media (max-width: 375px) {
@@ -435,6 +459,18 @@
   .left,
   .right {
     width: 100%;
+  }
+
+  .retail-outlets {
+    grid-template-columns: 1fr;
+  }
+
+  .map {
+    width: 300px;
+  }
+
+  .about-us-img-box {
+    padding: 5px;
   }
 }
 
@@ -496,6 +532,18 @@
   .left,
   .right {
     width: 100%;
+  }
+
+  .retail-outlets {
+    grid-template-columns: 1fr;
+  }
+
+  .map {
+    width: 300px;
+  }
+
+  .about-us-img-box {
+    padding: 5px;
   }
 
   /******************* SINGLE PRODUCT **************************/

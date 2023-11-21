@@ -105,6 +105,7 @@ span {
 .section-weekly-box,
 .cylinders-box,
 .shop-cylinders-box,
+.shop-accessories-box,
 .shop-accessories-box {
   display: grid;
   justify-content: center;
@@ -403,6 +404,7 @@ span {
 }
 
 .shop-cylinders-box,
+.shop-accessories-box,
 .shop-accessories-box {
   grid-template-columns: repeat(6, 1fr);
 }

@@ -224,6 +224,19 @@
   .single-prod-details {
     width: 100%;
   }
+
+  .payment-process {
+    padding: 0;
+  }
+
+  .payment-process-details {
+    flex-direction: column;
+  }
+
+  .left,
+  .right {
+    width: 100%;
+  }
 }
 
 @media (max-width: 450px) {
@@ -258,8 +271,9 @@
   }
 
   .featured-product-box {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     justify-items: center;
+    padding: 5px;
   }
 
   .cart-add {
@@ -287,6 +301,19 @@
   }
 
   .single-prod-details {
+    width: 100%;
+  }
+
+  .payment-process {
+    padding: 0;
+  }
+
+  .payment-process-details {
+    flex-direction: column;
+  }
+
+  .left,
+  .right {
     width: 100%;
   }
 }
@@ -341,6 +368,19 @@
   .single-prod-details {
     width: 100%;
   }
+
+  .payment-process {
+    padding: 0;
+  }
+
+  .payment-process-details {
+    flex-direction: column;
+  }
+
+  .left,
+  .right {
+    width: 100%;
+  }
 }
 
 @media (max-width: 375px) {
@@ -361,7 +401,7 @@
   }
 
   .featured-product-box {
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     justify-items: center;
   }
 
@@ -381,6 +421,19 @@
   }
 
   .single-prod-details {
+    width: 100%;
+  }
+
+  .payment-process {
+    padding: 0;
+  }
+
+  .payment-process-details {
+    flex-direction: column;
+  }
+
+  .left,
+  .right {
     width: 100%;
   }
 }
@@ -420,7 +473,7 @@
     justify-items: center;
   }
 
-  .cylinders-box {
+  .shop-cylinders-box {
     grid-template-columns: repeat(1, 1fr);
   }
 
@@ -430,6 +483,19 @@
 
   .cart-add {
     padding: 0;
+  }
+
+  .payment-process {
+    padding: 0;
+  }
+
+  .payment-process-details {
+    flex-direction: column;
+  }
+
+  .left,
+  .right {
+    width: 100%;
   }
 
   /******************* SINGLE PRODUCT **************************/
